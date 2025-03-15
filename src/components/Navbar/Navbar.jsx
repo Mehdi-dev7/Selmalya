@@ -46,9 +46,9 @@ export default function Navbar() {
 							<li key={menu.id}>
 								<Link
 									href={menu.link}
-									className="font-semibold text-light hover:text-green duration-150 curosr-pointer relative group"
+									className="font-semibold text-light hover:text-mint-dark duration-150 curosr-pointer relative group"
 								>
-									<div className="w-2 h-2 bg-green rounded-full mt-2 left-1/2 -translate-x-1/2 top-1/2 bottom-0  group-hover:block hidden absolute duration-150"></div>
+									<div className="w-2 h-2 bg-mint-dark rounded-full mt-2 left-1/2 -translate-x-1/2 top-1/2 bottom-0  group-hover:block hidden absolute duration-150"></div>
 									{menu.title}
 								</Link>
 							</li>
@@ -57,7 +57,7 @@ export default function Navbar() {
 				</div>
 				{/* Hamburger section */}
 				<div className="lg:hidden ">
-					<IoMdMenu className="text-4xl text-light cursor-pointer hover:text-[#204f1e]" />
+					<IoMdMenu className="text-4xl text-light cursor-pointer hover:text-mint-dark" />
 				</div>
 			</div>
 		</nav>
