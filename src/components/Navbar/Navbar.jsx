@@ -28,7 +28,7 @@ export default function Navbar() {
 	];
 
 	return (
-		<nav className="relative z-20 bg-[#54a98a] ">
+		<nav className="relative z-20 bg-mint ">
 			<div className="flex justify-between items-center md:px-40 px-10 py-2">
 				{/* Log section */}
 
@@ -46,9 +46,9 @@ export default function Navbar() {
 							<li key={menu.id}>
 								<Link
 									href={menu.link}
-									className="font-semibold text-[#fbfbed] hover:text-[#204f1e] duration-150 curosr-pointer relative group"
+									className="font-semibold text-light hover:text-green duration-150 curosr-pointer relative group"
 								>
-									<div className="w-2 h-2 bg-[#204f1e] rounded-full mt-2 left-1/2 -translate-x-1/2 top-1/2 bottom-0 group-hover:block hidden absolute"></div>
+									<div className="w-2 h-2 bg-green rounded-full mt-2 left-1/2 -translate-x-1/2 top-1/2 bottom-0  group-hover:block hidden absolute duration-150"></div>
 									{menu.title}
 								</Link>
 							</li>
@@ -57,7 +57,7 @@ export default function Navbar() {
 				</div>
 				{/* Hamburger section */}
 				<div className="lg:hidden ">
-					<IoMdMenu className="text-4xl text-[#fbfbed] cursor-pointer hover:text-[#204f1e]"/>
+					<IoMdMenu className="text-4xl text-light cursor-pointer hover:text-[#204f1e]" />
 				</div>
 			</div>
 		</nav>

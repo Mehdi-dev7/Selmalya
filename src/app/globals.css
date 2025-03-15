@@ -18,5 +18,8 @@ body {
 }
 
 @theme {
-  --color-primary: #88cfac,
+  --color-mint: #88cfac;
+  --color-green: #204f1e;
+  --color-light: #fbfbed;
+  
 }
