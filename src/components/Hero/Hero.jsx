@@ -16,7 +16,6 @@ export default function Hero() {
 
 					{/* Images */}
 
-					{/* Image principale bien centrée */}
 					<div className="relative w-[200px] md:w-[250px] lg:w-[300px] xl:w-[400px] h-[200px] md:h-[250px] lg:h-[300px] xl:h-[400px] rounded-full overflow-hidden border-4 border-white shadow-lg mb-5 md:mt-0">
 						<Image
 							src={HeroPng}

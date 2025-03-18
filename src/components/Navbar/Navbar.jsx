@@ -7,7 +7,7 @@ export default function Navbar() {
 	const NavbarMenu = [
 		{
 			id: 1,
-			title: "Présentation",
+			title: "Qui sommes Nous",
 			link: "/présentation",
 		},
 		{
