@@ -4,7 +4,7 @@ import HeroPng from "../../assets/selmalyapng.png";
 
 export default function Hero() {
 	return (
-		<section className="bg-light overflow-hidden relative h-[calc(100vh-70px)] flex items-center justify-center px-4 md:px-6">
+		<section className="bg-light overflow-hidden relative min-h-screen flex items-center justify-center px-4 md:px-6">
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center w-full">
 				{/* Blob (agrandi au-dessus de md) */}
 				<div className="flex justify-center items-center mb-30">

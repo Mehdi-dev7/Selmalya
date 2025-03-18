@@ -4,12 +4,13 @@ import Navbar from "@/components/Navbar/Navbar";
 
 export default function page() {
 	return (
-		<div>
+		<div className="relative">
 			<Navbar />
-			{/* Contenu de page */}
-			<Hero />
-			<Banner />
-		
+			<div className="relative z-10">
+				{/* Contenu de page */}
+				<Hero />
+				<Banner />
+			</div>
 		</div>
 	);
 }
