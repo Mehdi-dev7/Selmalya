@@ -2,7 +2,7 @@ import Banner from "@/components/Banner/Banner";
 import Hero from "@/components/Hero/Hero";
 import Navbar from "@/components/Navbar/Navbar";
 import Services from "@/components/Services/Services";
-
+import Banner2 from "@/components/Banner2/Banner2";
 export default function page() {
 	return (
 		<div className="relative">
@@ -12,6 +12,7 @@ export default function page() {
 				<Hero />
 				<Banner />
 				<Services />
+				<Banner2 />
 			</div>
 		</div>
 	);
