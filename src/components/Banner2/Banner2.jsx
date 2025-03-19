@@ -17,7 +17,7 @@ export default function Banner2() {
 				{/* banner text */}
 				<div className="flex flex-col justify-center items-center lg:items-start w-full max-w-xl mx-auto">
 					<div className="text-center lg:text-left space-y-6 md:pr-6">
-						<h1 className="text-4xl xl:text-[50px] md:text-5xl font-bold !leading-snug text-mint-dark mb-20 overflow-hidden text-ellipsis lg:whitespace-nowrap">
+						<h1 className="text-4xl xl:text-[50px] md:text-5xl font-bold !leading-snug text-mint-dark mb-20 2xl:whitespace-nowrap">
 							Pourquoi choisir Selmalya ?
 						</h1>
 						<ul className="space-y-6 pl-0 text-lg md:text-xl leading-relaxed">
