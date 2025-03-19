@@ -67,7 +67,7 @@ export default function Navbar() {
 				isScrolled ? "bg-mint/50 backdrop-blur-sm" : "bg-mint"
 			}`}
 		>
-			<div className="flex justify-between items-center md:px-40 px-10 py-2">
+			<div className="flex justify-between items-center lg:px-50 px-10 py-2">
 				{/* Log section */}
 
 				<div className="flex justify-center items-center">
