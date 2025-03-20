@@ -10,7 +10,7 @@ export default function Banner2() {
 					<Image
 						src={BannerImage}
 						alt="Selmalya partenariat"
-						className="w-full max-w-md md:max-w-xl xl:w-[600px] h-auto"
+						className="w-full max-w-md md:max-w-xl lg:w-[120%] md:w-[80%] xl:w-[600px] h-auto"
 					/>
 				</div>
 
@@ -45,17 +45,28 @@ export default function Banner2() {
 								</span>
 							</li>
 						</ul>
-						<p className="text-lg md:text-xl leading-relaxed">
-							Chez Selmalya, nous privilégions une relation de proximité et de
-							confiance. Contrairement aux grandes structures impersonnelles,
-							nous sommes une entreprise à taille humaine, proche de nos
-							clients, et toujours à l'écoute de leurs besoins. Avec nous, vous
-							n'êtes pas un simple numéro, mais un partenaire avec qui nous
-							construisons une relation durable et familiale. Ne laissez plus
-							les problèmes de tiers payant freiner votre activité.
-							Contactez-nous dès aujourd'hui pour une solution adaptée à vos
-							besoins !
-						</p>
+						<div className="text-lg md:text-xl leading-relaxed">
+							<p>
+								<span className="text-mint font-semibold text-3xl">
+									{" "}
+									Chez Selmalya
+								</span>
+								, nous privilégions une relation de proximité et de confiance.
+								Contrairement aux grandes structures impersonnelles, nous sommes
+								une entreprise à taille humaine, proche de nos clients, et
+								toujours à l'écoute de leurs besoins. Avec nous, vous n'êtes pas
+								un simple numéro, mais un partenaire avec qui nous construisons
+								une relation durable et familiale. Ne laissez plus les problèmes
+								de tiers payant freiner votre activité.
+							</p>
+							<p className="mt-6">
+								<span className="text-mint font-semibold text-3xl">
+									Contactez-nous
+								</span>
+								{"  "}
+								dès aujourd'hui pour une solution adaptée à vos besoins !
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
