@@ -3,7 +3,7 @@ import ContactRight from "./ContactRight";
 
 export default function Contact() {
   return (
-    <section className="bg-light min-h-[1000px]">
+    <section className="bg-light min-h-[1100px]">
       <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-8 pt-20">
         <h1 className="text-4xl text-center lg:text-left xl:text-[50px] md:text-5xl font-bold !leading-snug text-mint-dark mb-10">
           Contactez-nous

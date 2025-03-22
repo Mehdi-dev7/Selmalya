@@ -3,7 +3,7 @@ import BannerImage from "../../assets/Agreement.svg";
 
 export default function Banner2() {
 	return (
-		<section className="bg-light/50 min-h-[1200px] flex items-center justify-center">
+		<section className="bg-light/50 min-h-[1000px] flex items-center justify-center">
 			<div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-4 sm:px-6 md:px-8 py-14 md:py-24">
 				{/* banner image  */}
 				<div className="flex justify-center items-center w-full max-w-xl xl:max-w-4xl mx-auto lg:pr-30">
