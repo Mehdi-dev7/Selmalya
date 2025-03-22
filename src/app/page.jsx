@@ -3,7 +3,7 @@ import Hero from "@/components/Hero/Hero";
 import Navbar from "@/components/Navbar/Navbar";
 import ServicesBis from "@/components/Services/ServicesBis";
 import Banner2 from "@/components/Banner2/Banner2";
-import Form from "@/components/Form/Form";
+import Contact from "@/components/Contact/Contact";
 
 export default function page() {
 	return (
@@ -15,7 +15,7 @@ export default function page() {
 				<Banner />
 				<ServicesBis />
 				<Banner2 />
-				<Form />
+				<Contact />
 			</div>
 		</div>
 	);
