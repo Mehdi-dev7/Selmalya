@@ -1,7 +1,7 @@
 import email from "@/assets/Emails.svg";
 import Image from "next/image";
 import ContactInfo from "./ContactInfo";
-import ContactSocial from "./ContactSocial";
+
 
 export default function ContactRight() {
 	return (

@@ -1,17 +1,23 @@
 import Image from "next/image";
+import { Link as ScrollLink } from "react-scroll";
 import Blob from "../../assets/blob-selmalya.svg";
 import HeroPng from "../../assets/selmalyapng.png";
 
 export default function Hero() {
+	const handleContactClick = () => {
+		// Vous pouvez ajouter d'autres actions ici si nécessaire
+		console.log("Navigation vers la section contact");
+	};
+
 	return (
 		<section className="bg-light overflow-hidden relative min-h-screen flex items-center justify-center px-4 md:px-6">
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center w-full">
 				{/* Blob (agrandi au-dessus de md) */}
-				<div className="flex justify-center items-center mb-30">
+				<div className="flex justify-center items-center mb-15 md:mb-30">
 					<Image
 						src={Blob}
 						alt="blob"
-						className="absolute w-[500px] md:w-[550px] lg:w-[700px] xl:w-[1000px] opacity-70"
+						className="absolute w-[550px] md:w-[570px] lg:w-[700px] xl:w-[900px] 3xl:w-[1000px] opacity-70"
 					/>
 
 					{/* Images */}
@@ -34,9 +40,17 @@ export default function Hero() {
 						Spécialiste du <span className="text-mint">Tiers-Payant</span>
 					</p>
 
-					<button className="primary-btn flex items-center gap-2 mt-5 md:mt-10 px-10 py-3 text-lg md:text-xl lg:text-2xl">
+					<ScrollLink
+						to="contact"
+						spy={true}
+						smooth={true}
+						offset={-100}
+						duration={500}
+						onClick={handleContactClick}
+						className="primary-btn flex items-center gap-2 mt-5 md:mt-10 px-10 py-3 text-lg md:text-xl lg:text-2xl cursor-pointer"
+					>
 						Contactez-nous
-					</button>
+					</ScrollLink>
 				</div>
 			</div>
 		</section>

@@ -98,7 +98,7 @@ export default function Services() {
 								className="bg-mint/20 rounded-2xl  flex flex-col gap-4 items-center justify-center p-4 py-7 hover:bg-light/90 hover:scale-110 duration-300 hover:shadow-2xl"
 							>
 								<div className="text-4xl mb-4">{service.icon}</div>
-								<h2 className="text-lg font-semibold text-center px-3">
+								<h2 className="md:text-lg font-semibold text-center px-3">
 									{service.title}
 								</h2>
 							</div>
@@ -124,7 +124,7 @@ export default function Services() {
 										
 										className="rounded-full w-16 h-16 object-cover border-2 border-white"
 									/>
-									<h2 className="text-lg font-semibold text-center px-4">
+									<h2 className="md:text-lg font-semibold text-center px-4">
 										{software.title}
 									</h2>
 								</div>

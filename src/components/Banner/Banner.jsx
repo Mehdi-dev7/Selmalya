@@ -14,7 +14,7 @@ export default function Banner() {
 						<h2 className="text-xl md:text-2xl font-semibold">
 							Votre Expert en Gestion du <span className="text-mint">Tiers-Payant</span>
 						</h2>
-						<p className="text-lg md:text-xl leading-relaxed">
+						<p className="text-base sm:text-lg md:text-xl leading-relaxed">
 							Avec 20 ans d'expérience en pharmacie, Selmalya est le partenaire
 							de confiance des officines pour l'externalisation du tiers payant.
 							Nous comprenons les défis quotidiens des pharmaciens et offrons

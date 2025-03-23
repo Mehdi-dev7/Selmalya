@@ -78,7 +78,7 @@ export default function ContactForm() {
 			<form
 				ref={formRef}
 				onSubmit={handleSubmit(onSubmit)}
-				className="flex flex-col gap-4 w-full mb-30"
+				className="flex flex-col gap-4 w-full mb-10 md:mb-30"
 			>
 				<div>
 					<input
