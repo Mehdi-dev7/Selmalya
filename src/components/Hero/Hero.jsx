@@ -35,7 +35,7 @@ export default function Hero() {
 					</p>
 
 					<button className="primary-btn flex items-center gap-2 mt-5 md:mt-10 px-10 py-3 text-lg md:text-xl lg:text-2xl">
-						Devis
+						Contactez-nous
 					</button>
 				</div>
 			</div>

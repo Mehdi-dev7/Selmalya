@@ -20,11 +20,19 @@ export default function page() {
 			<Navbar />
 			<div className="relative z-10">
 				{/* Contenu de page */}
-				<Hero />
-				<Banner />
-				<ServicesBis />
-				<Banner2 />
-				<Contact />
+				<section id="accueil">
+					<Hero />
+				</section>
+				<section id="qui-sommes-nous">
+					<Banner />
+				</section>
+				<section id="services">
+					<ServicesBis />
+					<Banner2 />
+				</section>
+				<section id="contact">
+					<Contact />
+				</section>
 			</div>
 			<ToastContainer
 				position="bottom-right"
