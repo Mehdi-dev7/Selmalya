@@ -92,7 +92,7 @@ export default function Hero() {
 							offset={-100}
 							duration={500}
 							onClick={handleContactClick}
-							className="primary-btn flex items-center gap-2 mt-5 md:mt-10 px-10 py-3 text-lg md:text-xl lg:text-2xl cursor-pointer"
+							className="primary-btn flex items-center gap-2 mt-5 md:mt-10 px-10 py-3 text-lg md:text-xl lg:text-2xl cursor-pointer hover:shadow-xl hover:scale-101 transition-all"
 						>
 							Contactez-nous
 						</ScrollLink>
