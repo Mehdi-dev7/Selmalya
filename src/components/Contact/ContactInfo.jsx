@@ -2,10 +2,15 @@ import { FiPhone } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
-
+import { motion } from "framer-motion";
 export default function ContactInfo() {
 	return (
-		<div className="flex flex-col gap-4 font-semibold text-light">
+		<motion.div 
+		initial={{ opacity: 0, y: 40 }}
+		whileInView={{ opacity: 1, y: 0 }}
+		viewport={{ once: true, amount: 0.3 }}
+		transition={{ duration: 0.4,delay: 0.7, ease: "easeOut" }}
+		className="flex flex-col gap-4 font-semibold text-light">
 			{/* Email avec lien mailto */}
 			<div className="flex items-center gap-4 justify-start">
 				<HiOutlineMail className="text-3xl" />
@@ -54,6 +59,6 @@ export default function ContactInfo() {
 					7, allée André Malraux, 93430 villetaneuse
 				</a>
 			</div>
-		</div>
+		</motion.div>
 	);
 }

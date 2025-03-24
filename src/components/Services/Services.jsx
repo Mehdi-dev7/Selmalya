@@ -154,7 +154,7 @@ const softwareCardAnimation = {
 						className="text-4xl text-center lg:text-left xl:text-[50px] md:text-5xl font-bold !leading-snug text-mint-dark mb-20"
 						initial={{ opacity: 0, y: 20 }}
 						whileInView={{ opacity: 1, y: 0 }}
-						viewport={{ once: true }}
+						viewport={{ amount: 0.3, once: true }}
 						transition={{ duration: 0.5 }}
 					>
 						Nos services
@@ -164,7 +164,7 @@ const softwareCardAnimation = {
 						variants={containerAnimation}
 						initial="hidden"
 						whileInView="show"
-						viewport={{ once: true }}
+						viewport={{ amount: 0.3, once: true }}
 					>
 						{services.map((service) => (
 							<motion.div
@@ -186,7 +186,7 @@ const softwareCardAnimation = {
 						className="text-2xl text-center lg:text-left xl:text-[40px] md:text-4xl font-bold !leading-snug text-mint-dark mt-20"
 						initial={{ opacity: 0, y: 20 }}
 						whileInView={{ opacity: 1, y: 0 }}
-						viewport={{ once: true }}
+						viewport={{ amount: 0.3, once: true }}
 						transition={{ duration: 0.5 }}
 					>
 						Spécialisés dans les logiciels :
@@ -198,8 +198,8 @@ const softwareCardAnimation = {
 							variants={softwareContainerAnimation}
 							initial="hidden"
 							whileInView="show"
-							//viewport={{ once: true }}
-							viewport={{ amount: 0.3 }}
+							
+							viewport={{ once:true, amount: 0.3 }}
 						>
 							{softwares.map((software) => (
 								<motion.div
@@ -224,8 +224,8 @@ const softwareCardAnimation = {
 							<motion.div
 								initial={{ opacity: 0, x: 50 }}
 								whileInView={{ opacity: 1, x: 0 }}
-								//viewport={{ once: true }}
-								viewport={{ amount: 0.3 }}
+							
+								viewport={{ once:true, amount: 0.3 }}
 								transition={{ duration: 0.5, delay: 0.3, ease: "easeInOut" }}
 							>
 								<Image

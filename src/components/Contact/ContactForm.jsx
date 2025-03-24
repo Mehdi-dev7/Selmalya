@@ -2,6 +2,7 @@
 
 import emailjs from "@emailjs/browser";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
@@ -73,14 +74,51 @@ export default function ContactForm() {
 		}
 	};
 
+	const formAnimation = {
+		hidden: { opacity: 0 },
+		show: {
+			opacity: 1,
+			transition: {
+				staggerChildren: 0.2,
+				delayChildren: 0.3,
+			},
+		},
+	};
+
+	const inputAnimation = {
+		hidden: {
+			opacity: 0,
+			x: -20,
+			y: 50,
+		},
+		show: {
+			opacity: 1,
+			x: 0,
+			y: 0,
+			transition: {
+				type: "spring",
+				stiffness: 100,
+				duration: 0.5,
+				ease: "easeInOut",
+			},
+		},
+	};
+
 	return (
 		<div className="w-full">
-			<form
+			<motion.form
 				ref={formRef}
 				onSubmit={handleSubmit(onSubmit)}
-				className="flex flex-col gap-4 w-full mb-10 md:mb-30"
+				className="flex flex-col gap-4 w-full mb-10 lg:mb-30"
+				variants={formAnimation}
+				initial="hidden"
+				whileInView="show"
+				viewport={{ amount: 0.3, once: true }}
 			>
-				<div>
+				<motion.div
+					variants={inputAnimation}
+					viewport={{ amount: 0.3, once: true }}
+				>
 					<input
 						type="text"
 						placeholder="Votre Nom ou Société"
@@ -93,8 +131,12 @@ export default function ContactForm() {
 					{errors.name && (
 						<p className="text-red-500 text-sm">{errors.name.message}</p>
 					)}
-				</div>
-				<div>
+				</motion.div>
+
+				<motion.div
+					variants={inputAnimation}
+					viewport={{ amount: 0.3, once: true }}
+				>
 					<input
 						placeholder="Votre Email"
 						className={`h-12 rounded-lg bg-light px-2 w-full border ${
@@ -105,8 +147,12 @@ export default function ContactForm() {
 					{errors.email && (
 						<p className="text-red-500 text-sm">{errors.email.message}</p>
 					)}
-				</div>
-				<div>
+				</motion.div>
+
+				<motion.div
+					variants={inputAnimation}
+					viewport={{ amount: 0.3, once: true }}
+				>
 					<textarea
 						type="text"
 						placeholder="Votre Message"
@@ -121,17 +167,22 @@ export default function ContactForm() {
 					{errors.message && (
 						<p className="text-red-500 text-sm">{errors.message.message}</p>
 					)}
-				</div>
-				<button
-					type="submit"
-					disabled={isSubmitting}
-					className={`w-full mt-8 rounded-lg border border-mint-dark hover:bg-mint-dark hover:text-light duration-300 bg-light h-12 font-bold text-xl cursor-pointer shadow-lg hover:shadow-xl transition-all ${
-						isSubmitting ? "opacity-50 cursor-not-allowed" : ""
-					}`}
+				</motion.div>
+				<motion.div
+					variants={inputAnimation}
+					viewport={{ amount: 0.3, once: true }}
 				>
-					{isSubmitting ? "Envoi en cours..." : "Envoyer"}
-				</button>
-			</form>
+					<button
+						type="submit"
+						disabled={isSubmitting}
+						className={`w-full mt-8 rounded-lg border border-mint-dark hover:bg-mint-dark hover:text-light duration-300 bg-light h-12 font-bold text-xl cursor-pointer shadow-lg hover:shadow-xl transition-all ${
+							isSubmitting ? "opacity-50 cursor-not-allowed" : ""
+						}`}
+					>
+						{isSubmitting ? "Envoi en cours..." : "Envoyer"}
+					</button>
+				</motion.div>
+			</motion.form>
 		</div>
 	);
 }

@@ -1,7 +1,6 @@
-import { motion } from "framer-motion";
 import Image from "next/image";
 import BannerImage from "../../assets/Agreement.svg";
-
+import { motion } from "framer-motion";
 export default function Banner2() {
 	const listAnimation = {
 		hidden: { opacity: 0 },
@@ -35,7 +34,7 @@ export default function Banner2() {
 					className="flex justify-center items-center w-full max-w-xl mx-auto lg:pr-8 order-1 lg:order-1"
 					initial={{ opacity: 0, x: -50 }}
 					whileInView={{ opacity: 1, x: 0 }}
-					viewport={{ once: true }}
+					viewport={{ amount: 0.3, once: true }}
 					transition={{ duration: 0.6, ease: "easeOut" }}
 				>
 					<Image
@@ -52,7 +51,7 @@ export default function Banner2() {
 							className="text-3xl sm:text-4xl xl:text-[50px] md:text-5xl font-bold leading-tight text-mint-dark mb-8 sm:mb-12 md:mb-16"
 							initial={{ opacity: 0, y: 20 }}
 							whileInView={{ opacity: 1, y: 0 }}
-							viewport={{ once: true }}
+							viewport={{ amount: 0.3, once: true }}
 							transition={{ duration: 0.5 }}
 						>
 							Pourquoi choisir Selmalya ?
@@ -62,7 +61,7 @@ export default function Banner2() {
 							variants={listAnimation}
 							initial="hidden"
 							whileInView="show"
-							viewport={{ once: true }}
+							viewport={{ amount: 0.3, once: true }}
 						>
 							{/* Liste d'items avec animation */}
 							<motion.li variants={itemAnimation} className="flex items-start">
@@ -101,7 +100,7 @@ export default function Banner2() {
 							className="text-base sm:text-lg md:text-xl leading-relaxed mt-6"
 							initial={{ opacity: 0, y: 20 }}
 							whileInView={{ opacity: 1, y: 0 }}
-							viewport={{ once: true }}
+							viewport={{ amount: 0.3, once: true }}
 							transition={{ duration: 0.6, delay: 0.8 }}
 						>
 							<p>

@@ -13,7 +13,7 @@ export default function Banner() {
 							className="text-4xl xl:text-[50px] md:text-5xl font-bold !leading-snug text-mint-dark mb-20"
 							initial={{ y: 50, opacity: 0 }}
 							whileInView={{ y: 0, opacity: 1 }}
-							viewport={{ once: true }}
+							viewport={{ amount: 0.3, once: true }}
 							transition={{ duration: 0.6, delay: 0.2, ease: "easeInOut" }}
 						>
 							Qui sommes-nous ?
@@ -22,7 +22,7 @@ export default function Banner() {
 							className="text-xl md:text-2xl font-semibold"
 							initial={{ y: 50, opacity: 0 }}
 							whileInView={{ y: 0, opacity: 1 }}
-							viewport={{ once: true }}
+							viewport={{ amount: 0.3, once: true }}
 							transition={{ duration: 0.6, delay: 0.4, ease: "easeInOut" }}
 						>
 							Votre Expert en Gestion du{" "}
@@ -32,7 +32,7 @@ export default function Banner() {
 							className="text-base sm:text-lg md:text-xl leading-relaxed"
 							initial={{ y: 50, opacity: 0 }}
 							whileInView={{ y: 0, opacity: 1 }}
-							viewport={{ once: true }}
+							viewport={{ amount: 0.3, once: true }}
 							transition={{ duration: 0.6, delay: 0.6, ease: "easeInOut" }}
 						>
 							Avec 20 ans d'expérience en pharmacie, Selmalya est le partenaire
@@ -48,7 +48,7 @@ export default function Banner() {
 					className="flex justify-center items-center w-full max-w-xl xl:max-w-4xl mx-auto lg:mx-0"
 					initial={{ x: 50, opacity: 0 }}
 					whileInView={{ x: 0, opacity: 1 }}
-					viewport={{ once: true }}
+					viewport={{ amount: 0.3, once: true }}
 					transition={{ duration: 0.6, delay: 0.4, ease: "easeInOut" }}
 				>
 					<Image
