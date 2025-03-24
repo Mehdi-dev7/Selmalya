@@ -17,12 +17,12 @@ export default function Hero() {
 					<Image
 						src={Blob}
 						alt="blob"
-						className="absolute w-[550px] md:w-[570px] lg:w-[700px] xl:w-[900px] 3xl:w-[1000px] opacity-70"
+						className="absolute w-[550px] md:w-[570px] lg:w-[700px] xl:w-[800px] 2xl:w-[1000px] opacity-70"
 					/>
 
 					{/* Images */}
 
-					<div className="relative w-[200px] md:w-[250px] lg:w-[300px] xl:w-[400px] h-[200px] md:h-[250px] lg:h-[300px] xl:h-[400px] rounded-full overflow-hidden border-4 border-white shadow-lg mb-5 md:mt-0">
+					<div className="relative w-[200px] md:w-[250px] lg:w-[300px] xl:w-[350px] 2xl:w-[400px] h-[200px] md:h-[250px] lg:h-[300px] xl:h-[350px] 2xl:h-[400px] rounded-full overflow-hidden border-4 border-white shadow-lg mb-5 md:mt-0">
 						<Image
 							src={HeroPng}
 							alt="hero"
@@ -33,10 +33,10 @@ export default function Hero() {
 
 				{/* Texte */}
 				<div className="flex flex-col items-center md:items-start text-center md:text-left space-y-5">
-					<h1 className="text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-bold">
+					<h1 className="text-5xl md:text-6xl lg:text-8xl xl:text-8xl 2xl:text-9xl font-bold">
 						Selmalya
 					</h1>
-					<p className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold">
+					<p className="text-lg md:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl font-semibold">
 						Spécialiste du <span className="text-mint">Tiers-Payant</span>
 					</p>
 

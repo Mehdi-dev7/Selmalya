@@ -56,9 +56,9 @@ export default function Banner2() {
 						<div className="text-base sm:text-lg md:text-xl leading-relaxed mt-6">
 							<p>
 								<span className="text-mint font-semibold text-xl sm:text-2xl md:text-3xl block sm:inline mb-2 sm:mb-0">
-									Chez Selmalya
+									Chez Selmalya,
 								</span>
-								<span className="inline sm:inline">, </span>
+								
 								nous privilégions une relation de proximité et de confiance.
 								Contrairement aux grandes structures impersonnelles, nous sommes
 								une entreprise à taille humaine, proche de nos clients, et

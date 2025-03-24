@@ -3,6 +3,7 @@
 import Banner from "@/components/Banner/Banner";
 import Banner2 from "@/components/Banner2/Banner2";
 import Contact from "@/components/Contact/Contact";
+import Footer from "@/components/Footer/Footer";
 import Hero from "@/components/Hero/Hero";
 import Navbar from "@/components/Navbar/Navbar";
 import ServicesBis from "@/components/Services/ServicesBis";
@@ -33,6 +34,7 @@ export default function page() {
 				<section id="contact">
 					<Contact />
 				</section>
+				<Footer />
 			</div>
 			<ToastContainer
 				position="bottom-right"

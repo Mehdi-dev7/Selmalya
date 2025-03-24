@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { Link as LinkScroll } from "react-scroll";
 import { useEffect, useRef, useState } from "react";
 import { IoMdMenu } from "react-icons/io";
