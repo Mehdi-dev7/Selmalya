@@ -23,9 +23,12 @@ export default function Footer() {
 							/>
 							<h3 className="text-xl font-bold ml-3">Selmalya</h3>
 						</div>
-						<p className="text-sm text-center md:text-left">
+						<p className="text-sm text-center md:text-left mb-2">
 							Spécialiste du tiers-payant pour les professionnels de santé. Nous
 							simplifions votre gestion administrative.
+						</p>
+						<p className="text-xs text-center md:text-left">
+							SIRET : 91025547000023
 						</p>
 					</div>
 

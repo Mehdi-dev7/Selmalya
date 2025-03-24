@@ -6,7 +6,7 @@ import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 import Hero from "@/components/Hero/Hero";
 import Navbar from "@/components/Navbar/Navbar";
-import ServicesBis from "@/components/Services/ServicesBis";
+import ServicesBis from "@/components/Services/Services";
 import emailjs from "@emailjs/browser";
 import { useEffect } from "react";
 import { ToastContainer } from "react-toastify";

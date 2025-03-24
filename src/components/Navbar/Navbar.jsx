@@ -5,6 +5,7 @@ import { Link as LinkScroll } from "react-scroll";
 import { useEffect, useRef, useState } from "react";
 import { IoMdMenu } from "react-icons/io";
 import LogoSelmalya from "../../assets/selmalyapng.png";
+import { motion } from "framer-motion";
 
 export default function Navbar() {
 	const [isScrolled, setIsScrolled] = useState(false);
@@ -67,7 +68,12 @@ export default function Navbar() {
 				isScrolled ? "bg-mint/75 backdrop-blur-sm" : "bg-mint"
 			}`}
 		>
-			<div className="flex justify-between items-center lg:px-50 px-10 py-2">
+			<motion.div
+				className="flex justify-between items-center lg:px-50 px-10 py-2"
+				initial={{ y: -50, opacity: 0 }}
+				animate={{ y: 0, opacity: 1 }}
+				transition={{ duration: 0.4, delay: 0.6, ease: "easeInOut" }}
+			>
 				{/* Log section */}
 
 				<div className="flex justify-center items-center">
@@ -107,7 +113,7 @@ export default function Navbar() {
 						className="text-4xl text-light cursor-pointer hover:text-mint-dark"
 					/>
 				</div>
-			</div>
+			</motion.div>
 			{/* Hamburger menu */}
 			<div
 				ref={menuRef}
