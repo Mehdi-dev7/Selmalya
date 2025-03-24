@@ -3,8 +3,12 @@ import Link from "next/link";
 import LogoSelmalya from "../../assets/selmalyapng.png";
 
 export default function Footer() {
+	const foundingYear = 2023; 
 	const currentYear = new Date().getFullYear();
-
+	const copyrightYears =
+		foundingYear === currentYear
+			? currentYear
+			: `${foundingYear}-${currentYear}`;
 	return (
 		<footer className="bg-mint-dark text-light py-10 px-4 md:px-8">
 			<div className="container mx-auto">
@@ -78,7 +82,7 @@ export default function Footer() {
 				{/* Mentions légales et copyright */}
 				<div className="flex flex-col md:flex-row justify-between items-center text-sm">
 					<div className="mb-4 md:mb-0 text-center md:text-left">
-						&copy; {currentYear} Selmalya. Tous droits réservés.
+						&copy; {copyrightYears} Selmalya. Tous droits réservés.
 					</div>
 					<div className="flex flex-wrap justify-center gap-4">
 						<Link
