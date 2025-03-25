@@ -11,16 +11,16 @@ import emailjs from "@emailjs/browser";
 import { useEffect } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
 export default function page() {
 	useEffect(() => {
 		emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_USER_ID || "USER_ID");
 	}, []);
 
 	return (
-		<div className="relative">
+		<main className="relative">
 			<Navbar />
-			<div className="relative z-10">
-				{/* Contenu de page */}
+			<div>
 				<section id="accueil">
 					<Hero />
 				</section>
@@ -46,9 +46,8 @@ export default function page() {
 				pauseOnFocusLoss
 				draggable
 				pauseOnHover
-				theme="light" 
-				
+				theme="light"
 			/>
-		</div>
+		</main>
 	);
 }
