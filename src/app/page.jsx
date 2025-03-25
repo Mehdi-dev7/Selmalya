@@ -18,20 +18,20 @@ export default function page() {
 	}, []);
 
 	return (
-		<main className="relative">
+		<main className="relative w-full overflow-x-hidden">
 			<Navbar />
-			<div>
-				<section id="accueil">
+			<div className="w-full">
+				<section id="accueil" className="w-full">
 					<Hero />
 				</section>
-				{/* <section id="qui-sommes-nous">
+				<section id="qui-sommes-nous" className="w-full">
 					<Banner />
-				</section>  */}
-				<section id="services">
-					{/* <ServicesBis /> */}
+				</section>
+				<section id="services" className="w-full">
+					<ServicesBis />
 					<Banner2 />
 				</section>
-				<section id="contact">
+				<section id="contact" className="w-full">
 					<Contact />
 				</section>
 				<Footer />
