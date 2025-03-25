@@ -1,7 +1,9 @@
 @import "tailwindcss";
 
 
-
+body {
+  overflow-x: hidden;
+}
 /* Poppins par défaut */
 body {
   font-family: var(--font-poppins), sans-serif;
