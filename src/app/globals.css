@@ -1,43 +1,39 @@
 @import "tailwindcss";
 
-
+html,
 body {
-  overflow-x: hidden;
+	overflow-x: hidden;
 }
 /* Poppins par défaut */
 body {
-  font-family: var(--font-poppins), sans-serif;
+	font-family: var(--font-poppins), sans-serif;
 }
 
 /* Inter sur certains éléments */
 .inter {
-  font-family: var(--font-inter), sans-serif;
+	font-family: var(--font-inter), sans-serif;
 }
 
 /* Geist Sans sur d'autres éléments */
 .geist {
-  font-family: var(--font-geist), sans-serif;
+	font-family: var(--font-geist), sans-serif;
 }
 
-
-
 @theme {
-  --color-mint: #88cfac;
-  --color-mint-dark: #34835C;
-  --color-green: #204f1e;
-  --color-light: #fbfbed;
-  
-  
+	--color-mint: #88cfac;
+	--color-mint-dark: #34835c;
+	--color-green: #204f1e;
+	--color-light: #fbfbed;
 }
 
 @layer utilities {
-  .drop-shadow {
-    filter: drop-shadow(6px 8px 10px rgba(0, 0, 0, 0.5))
-  }
+	.drop-shadow {
+		filter: drop-shadow(6px 8px 10px rgba(0, 0, 0, 0.5));
+	}
 }
 
 @layer components {
-  .primary-btn {
-    @apply inline-block bg-mint text-light rounded-lg hover:bg-mint-dark duration-200 shadow-[0px_10px_8px_-7px_#34835c] hover:shadow-[0px_10px_8px_-7px_#88cfac] font-semibold py-2 px-6 cursor-pointer ;
-  }
+	.primary-btn {
+		@apply inline-block bg-mint text-light rounded-lg hover:bg-mint-dark duration-200 shadow-[0px_10px_8px_-7px_#34835c] hover:shadow-[0px_10px_8px_-7px_#88cfac] font-semibold py-2 px-6 cursor-pointer;
+	}
 }
