@@ -1,17 +1,18 @@
 @import "tailwindcss";
 
+:root {
+	--navbar-height: 5rem;
+}
+
 html {
 	scroll-behavior: smooth;
-	-webkit-overflow-scrolling: touch;
 }
 
 body {
 	min-height: 100vh;
 	width: 100%;
-	overflow-y: visible; /* Permet le scroll */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	touch-action: pan-y; /* Autorise uniquement le scroll vertical */
 	font-family: var(--font-poppins), sans-serif;
 }
 
@@ -47,4 +48,15 @@ body {
 	.primary-btn {
 		@apply inline-block bg-mint text-light rounded-lg hover:bg-mint-dark duration-200 shadow-[0px_10px_8px_-7px_#34835c] hover:shadow-[0px_10px_8px_-7px_#88cfac] font-semibold py-2 px-6 cursor-pointer;
 	}
+}
+
+/* Optimisations pour la navbar */
+.fixed {
+	position: fixed !important;
+	z-index: 999;
+}
+
+/* Désactiver les highlights sur mobile */
+* {
+	-webkit-tap-highlight-color: transparent;
 }
