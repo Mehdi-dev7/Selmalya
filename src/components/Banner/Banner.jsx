@@ -5,9 +5,9 @@ import BannerImage from "../../assets/Designer.svg";
 export default function Banner() {
 	return (
 		<section className="bg-light/50 min-h-[800px] sm:min-h-[1000px] flex items-center justify-center py-10 sm:py-16">
-			<div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-4 sm:px-6 md:px-8">
+			<div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-4 sm:px-6 md:px-8 py-8 md:py-24">
 				{/* banner text */}
-				<div className="flex flex-col justify-center items-center lg:items-start w-full">
+				<div className="flex flex-col justify-center items-center lg:items-start w-full max-w-xl mx-auto lg:mx-0">
 					<div className="text-center lg:text-left space-y-6">
 						<motion.h1
 							className="text-4xl xl:text-[50px] md:text-5xl font-bold !leading-snug text-mint-dark mb-20"
@@ -46,7 +46,7 @@ export default function Banner() {
 
 				{/* banner image */}
 				<motion.div
-					className="flex justify-center items-center w-full"
+					className="flex justify-center items-center w-full max-w-xl xl:max-w-4xl mx-auto lg:mx-0"
 					initial={{ x: 50, opacity: 0 }}
 					whileInView={{ x: 0, opacity: 1 }}
 					viewport={{ amount: 0.3, once: true }}

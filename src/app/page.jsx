@@ -18,7 +18,7 @@ export default function page() {
 	}, []);
 
 	return (
-		<main className="relative w-full overflow-x-hidden">
+		<main className="relative w-full">
 			<Navbar />
 			<div className="w-full">
 				<section id="accueil" className="w-full">
