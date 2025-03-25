@@ -85,13 +85,17 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="fr">
 			<head>
-				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+				<meta
+					name="viewport"
+					content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+				/>
 			</head>
 			<body
-				className={`${geistSans.variable} ${poppins.variable} ${inter.variable} antialiased`}
+				className={`${geistSans.variable} ${poppins.variable} ${inter.variable} antialiased overflow-x-hidden`}
 			>
 				{children}
 			</body>
 		</html>
 	);
 }
+

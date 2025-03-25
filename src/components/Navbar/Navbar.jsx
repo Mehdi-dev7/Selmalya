@@ -1,11 +1,11 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
+import { Link as LinkScroll } from "react-scroll";
 import { useEffect, useRef, useState } from "react";
 import { IoMdMenu } from "react-icons/io";
-import { Link as LinkScroll } from "react-scroll";
 import LogoSelmalya from "../../assets/selmalyapng.png";
+import { motion } from "framer-motion";
 
 export default function Navbar() {
 	const [isScrolled, setIsScrolled] = useState(false);
@@ -15,11 +15,10 @@ export default function Navbar() {
 
 	useEffect(() => {
 		const handleScroll = () => {
-			requestAnimationFrame(() => {
-				setIsScrolled(window.scrollY > 20);
-			});
+			const scrollPosition = window.scrollY;
+			setIsScrolled(scrollPosition > 20);
 		};
-		window.addEventListener("scroll", handleScroll, { passive: true });
+		window.addEventListener("scroll", handleScroll);
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
 
@@ -65,27 +64,23 @@ export default function Navbar() {
 
 	return (
 		<nav
-			className={`fixed top-0 left-0 w-full z-[999] ${
+			className={`fixed top-0 left-0 right-0 z-20 transition-all duration-300 ${
 				isScrolled ? "bg-mint/75 backdrop-blur-sm" : "bg-mint"
 			}`}
 		>
 			<motion.div
-				className="container mx-auto flex justify-between items-center lg:px-50 px-10 py-2 w-full"
+				className="flex justify-between items-center lg:px-50 px-10 py-2"
 				initial={{ y: -50, opacity: 0 }}
 				animate={{ y: 0, opacity: 1 }}
-				transition={{
-					duration: 0.3,
-					delay: 0.2,
-					ease: [0.25, 0.1, 0.25, 1.0],
-				}}
+				transition={{ duration: 0.4, delay: 0.6, ease: "easeInOut" }}
 			>
-				{/* Logo section */}
-				<div className="flex justify-center items-center relative">
+				{/* Log section */}
+
+				<div className="flex justify-center items-center">
 					<Image
-						className="logo w-15 h-15 border-2 border-black rounded-full object-contain bg-white"
+						className="logo w-15 h-15 border-2 border-black rounded-full object-contain bg-white "
 						src={LogoSelmalya}
 						alt="logo"
-						priority
 					/>
 				</div>
 				{/* Menu section */}
@@ -98,7 +93,8 @@ export default function Navbar() {
 									spy={true}
 									smooth={true}
 									offset={-100}
-									duration={200}
+									duration={500}
+									
 									className="font-semibold text-light hover:text-mint-dark duration-200 cursor-pointer"
 								>
 									<span className="relative inline-block">
@@ -119,47 +115,33 @@ export default function Navbar() {
 				</div>
 			</motion.div>
 			{/* Hamburger menu */}
-			<motion.div
+			<div
 				ref={menuRef}
-				className={`container mx-auto absolute top-full left-0 right-0 w-full transform-gpu ${
-					isScrolled ? "bg-mint/75 backdrop-blur-sm" : "bg-mint"
-				}`}
-				initial={false}
-				animate={{
-					height: isOpen ? "auto" : 0,
-					opacity: isOpen ? 1 : 0,
-					display: isOpen ? "block" : "none",
-				}}
-				transition={{
-					duration: 0.2,
-					ease: "easeInOut",
-				}}
+				className={`absolute top-full left-0 right-0 transition-all duration-300 transform z-10 overflow-hidden ${
+					isOpen ? "max-h-[300px]" : "max-h-0 opacity-0 pointer-events-none"
+				} ${isScrolled ? "bg-mint/75 backdrop-blur-sm" : "bg-mint"}`}
 			>
-				<ul
-					className={`flex flex-col items-center py-4 space-y-4 border-t border-light/70 ${
-						!isOpen && "hidden"
-					}`}
-				>
+				<ul className="flex flex-col items-center py-4 space-y-4 border-t border-light/70">
 					{NavbarMenu.map((menu) => (
 						<li className="w-full text-center group" key={menu.id}>
 							<LinkScroll
 								to={menu.link}
 								spy={true}
 								smooth={true}
-								offset={-70}
-								duration={100}
+								offset={-100}
+								duration={500}
 								className="font-semibold text-light cursor-pointer hover:text-mint-dark duration-200 block py-2"
 								onClick={() => setIsOpen(false)}
 							>
 								<span className="relative inline-block">
 									{menu.title}
-									<div className="absolute left-0 right-0 bottom-0 mx-auto bg-mint-dark w-0 group-hover:w-full h-[1px] transition-all duration-300"></div>
+									<div className="absolute left-0 right-0 bottom-0 mx-auto bg-mint-dark w-0 group-hover:w-full h-[1px] transition-all duration-500"></div>
 								</span>
 							</LinkScroll>
 						</li>
 					))}
 				</ul>
-			</motion.div>
+			</div>
 		</nav>
 	);
 }
