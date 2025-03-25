@@ -220,7 +220,7 @@ export default function Services() {
 						{/* Logiciels Image */}
 						<div className="flex items-center justify-center w-full max-w-xl lg:w-[100%] md:w-[80%] md:my-10 xl:max-w-4xl mx-auto  xl:pl-30">
 							<motion.div
-								initial={{ opacity: 0, x: 50 }}
+								initial={{ opacity: 0, x: -50 }}
 								whileInView={{ opacity: 1, x: 0 }}
 								viewport={{ once: true, amount: 0.3 }}
 								transition={{ duration: 0.5, delay: 0.3, ease: "easeInOut" }}

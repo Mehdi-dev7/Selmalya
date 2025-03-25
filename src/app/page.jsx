@@ -29,7 +29,7 @@ export default function page() {
 					<Banner />
 				</section>
 				<section id="services" className="w-full">
-					{/* <ServicesBis /> */}
+					<ServicesBis />
 					<Banner2 />
 				</section>
 				<section id="contact" className="w-full">
