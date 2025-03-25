@@ -25,7 +25,7 @@ export default function page() {
 					<Hero />
 				</section>
 				<section id="qui-sommes-nous" className="w-full">
-					{/* <Banner /> */}
+					<Banner />
 				</section>
 				<section id="services" className="w-full">
 					{/* <ServicesBis /> */}
