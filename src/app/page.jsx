@@ -28,7 +28,7 @@ export default function page() {
 					<Banner />
 				</section>  */}
 				<section id="services">
-					<ServicesBis />
+					{/* <ServicesBis /> */}
 					<Banner2 />
 				</section>
 				<section id="contact">
