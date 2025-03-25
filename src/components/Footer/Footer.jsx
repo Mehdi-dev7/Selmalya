@@ -25,7 +25,7 @@ export default function Footer() {
 							<Image
 								src={LogoSelmalya}
 								alt="Selmalya"
-								className="logo w-20 h-20 border-2 border-black rounded-full object-contain bg-white"
+								className="logo w-16 h-16 md:w-20 md:h-20 border-2 border-black rounded-full object-contain bg-white"
 							/>
 							<h3 className="text-xl font-bold ml-3">Selmalya</h3>
 						</div>
