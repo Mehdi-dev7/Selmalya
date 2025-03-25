@@ -10,15 +10,22 @@ import LogoSelmalya from "../../assets/selmalyapng.png";
 export default function Navbar() {
 	const [isScrolled, setIsScrolled] = useState(false);
 	const [isOpen, setIsOpen] = useState(false);
+	const [isLoaded, setIsLoaded] = useState(false);
 	const menuRef = useRef(null);
 	const hamburgerRef = useRef(null);
 
+	// Nouvel useEffect pour le rendu initial
+	useEffect(() => {
+		setIsLoaded(true);
+	}, []);
+
 	useEffect(() => {
 		const handleScroll = () => {
-			const scrollPosition = window.scrollY;
-			setIsScrolled(scrollPosition > 20);
+			requestAnimationFrame(() => {
+				setIsScrolled(window.scrollY > 20);
+			});
 		};
-		window.addEventListener("scroll", handleScroll);
+		window.addEventListener("scroll", handleScroll, { passive: true });
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
 
@@ -62,6 +69,8 @@ export default function Navbar() {
 		},
 	];
 
+	if (!isLoaded) return null; // Ne rend rien jusqu'à ce que le composant soit chargé
+
 	return (
 		<nav
 			className={`fixed top-0 left-0 w-full z-[999] ${
@@ -73,7 +82,7 @@ export default function Navbar() {
 					className="flex justify-between items-center lg:px-50 px-10 py-2"
 					initial={{ y: -50, opacity: 0 }}
 					animate={{ y: 0, opacity: 1 }}
-					transition={{ duration: 0.4, delay: 0.6, ease: "easeInOut" }}
+					transition={{ duration: 0.3, delay: 0.2 }}
 				>
 					{/* Log section */}
 
