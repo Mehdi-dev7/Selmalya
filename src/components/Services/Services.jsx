@@ -151,7 +151,7 @@ export default function Services() {
 				{/* Services */}
 				<div className="mb-10">
 					<motion.h1
-						className="text-4xl text-center lg:text-left xl:text-[50px] md:text-5xl font-bold !leading-snug text-mint-dark mb-20"
+						className="text-3xl text-center lg:text-left xl:text-[50px] lg:text-[40px] md:text-5xl font-bold !leading-snug text-mint-dark mb-20"
 						initial={{ opacity: 0, y: 20 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ amount: 0.3, once: true }}
@@ -183,7 +183,7 @@ export default function Services() {
 				{/* Logiciels */}
 				<div>
 					<motion.h1
-						className="text-2xl text-center lg:text-left xl:text-[40px] md:text-4xl font-bold !leading-snug text-mint-dark mt-20"
+						className="text-2xl text-center lg:text-left xl:text-[40px] lg:text-[32px] md:text-4xl font-bold !leading-snug text-mint-dark mt-20"
 						initial={{ opacity: 0, y: 20 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ amount: 0.3, once: true }}

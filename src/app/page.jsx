@@ -1,13 +1,12 @@
 "use client";
 
 import Banner from "@/components/Banner/Banner";
-import BannerBis from "@/components/Banner/BannerBis";
 import Banner2 from "@/components/Banner2/Banner2";
 import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 import Hero from "@/components/Hero/Hero";
 import Navbar from "@/components/Navbar/Navbar";
-import ServicesBis from "@/components/Services/Services";
+import Services from "@/components/Services/Services";
 import emailjs from "@emailjs/browser";
 import { useEffect } from "react";
 import { ToastContainer } from "react-toastify";
@@ -29,7 +28,7 @@ export default function page() {
 					<Banner />
 				</section>
 				<section id="services" className="w-full">
-					<ServicesBis />
+					<Services />
 					<Banner2 />
 				</section>
 				<section id="contact" className="w-full">

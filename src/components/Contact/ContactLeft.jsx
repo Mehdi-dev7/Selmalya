@@ -11,7 +11,7 @@ export default function ContactLeft() {
 				viewport={{ amount: 0.3, once: true }}
 				transition={{ duration: 0.5 }}
 			>
-				<h2 className="text-3xl font-semibold text-mint-dark mb-15">
+				<h2 className="text-2xl md:text-3xl font-semibold text-mint-dark mb-10 md:mb-15">
 					Obtenir un devis
 				</h2>
 			</motion.div>
