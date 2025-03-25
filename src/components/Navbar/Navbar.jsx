@@ -65,7 +65,7 @@ export default function Navbar() {
 
 	return (
 		<nav
-			className={`fixed top-0 left-0 right-0 z-[999] w-full transform-gpu will-change-transform ${
+			className={`fixed top-0 left-0 w-full z-[999] ${
 				isScrolled ? "bg-mint/75 backdrop-blur-sm" : "bg-mint"
 			}`}
 		>
