@@ -33,11 +33,11 @@ export default function Hero() {
 	const MotionImage = motion(Image);
 
 	return (
-		<section className="bg-light relative min-h-screen flex items-center justify-center">
+		<section className="bg-light w-full relative min-h-screen flex items-center justify-center">
 			<div className="container mx-auto px-4 md:px-6">
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center w-full">
 					{/* Blob (agrandi au-dessus de md) */}
-					<div className="flex justify-center items-center  md:mb-30">
+					<div className="flex justify-center items-center md:mb-30">
 						<MotionImage
 							src={Blob}
 							alt="blob"

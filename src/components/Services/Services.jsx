@@ -116,38 +116,38 @@ export default function Services() {
 	const softwareContainerAnimation = {
 		hidden: { opacity: 0 },
 		show: {
-				opacity: 1,
-				transition: {
-						staggerChildren: 0.1, // espacement entre chaque animation
-						delayChildren: 0.4,   // délai avant le début des animations
-						staggerDirection: -2, // Pour animer de bas en haut
-				},
+			opacity: 1,
+			transition: {
+				staggerChildren: 0.1, // espacement entre chaque animation
+				delayChildren: 0.4, // délai avant le début des animations
+				staggerDirection: -2, // Pour animer de bas en haut
+			},
 		},
-};
+	};
 
-const softwareCardAnimation = {
+	const softwareCardAnimation = {
 		hidden: {
-				opacity: 0,
-				y: 50,
-				scale: 0.8,
+			opacity: 0,
+			y: 50,
+			scale: 0.8,
 		},
 		show: {
-				opacity: 1,
-				y: 0,
-				scale: 1,
-				transition: {
-						type: "spring",
-						
-						duration: 0.5,    // durée de l'animation
-						bounce: 0.35,    // effet de rebond
-						ease: "easeOut",
-				},
+			opacity: 1,
+			y: 0,
+			scale: 1,
+			transition: {
+				type: "spring",
+
+				duration: 0.5, // durée de l'animation
+				bounce: 0.35, // effet de rebond
+				ease: "easeOut",
+			},
 		},
-};
+	};
 
 	return (
-		<section className="bg-light min-h-[1000px]">
-			<div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-8 pt-20">
+		<section className="bg-light w-full min-h-[1000px]">
+			<div className="container mx-auto px-4 sm:px-6 md:px-8 pt-20">
 				{/* Services */}
 				<div className="mb-10">
 					<motion.h1
@@ -198,8 +198,7 @@ const softwareCardAnimation = {
 							variants={softwareContainerAnimation}
 							initial="hidden"
 							whileInView="show"
-							
-							viewport={{ once:true, amount: 0.3 }}
+							viewport={{ once: true, amount: 0.3 }}
 						>
 							{softwares.map((software) => (
 								<motion.div
@@ -207,7 +206,6 @@ const softwareCardAnimation = {
 									variants={softwareCardAnimation}
 									className="bg-mint/20 rounded-2xl flex flex-row gap-4 items-center justify-start px-2 py-2 w-full h-20 max-w-md hover:bg-light/90 hover:scale-110 duration-300 hover:shadow-2xl"
 								>
-									
 									<Image
 										src={software.icon}
 										alt={software.title}
@@ -224,8 +222,7 @@ const softwareCardAnimation = {
 							<motion.div
 								initial={{ opacity: 0, x: 50 }}
 								whileInView={{ opacity: 1, x: 0 }}
-							
-								viewport={{ once:true, amount: 0.3 }}
+								viewport={{ once: true, amount: 0.3 }}
 								transition={{ duration: 0.5, delay: 0.3, ease: "easeInOut" }}
 							>
 								<Image
