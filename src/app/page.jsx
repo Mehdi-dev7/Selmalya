@@ -21,14 +21,14 @@ export default function page() {
 		<main className="relative">
 			<Navbar />
 			<div>
-				<section id="accueil">
+				{/* <section id="accueil">
 					<Hero />
 				</section>
 				<section id="qui-sommes-nous">
 					<Banner />
-				</section>
+				</section> */}
 				<section id="services">
-					<ServicesBis />
+					{/* <ServicesBis /> */}
 					<Banner2 />
 				</section>
 				<section id="contact">
