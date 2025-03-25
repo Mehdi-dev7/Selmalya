@@ -70,7 +70,7 @@ export default function Navbar() {
 			}`}
 		>
 			<motion.div
-				className="flex justify-between items-center lg:px-50 px-10 py-2 w-full"
+				className="container mx-auto flex justify-between items-center lg:px-50 px-10 py-2 w-full"
 				initial={{ y: -50, opacity: 0 }}
 				animate={{ y: 0, opacity: 1 }}
 				transition={{
@@ -121,7 +121,7 @@ export default function Navbar() {
 			{/* Hamburger menu */}
 			<motion.div
 				ref={menuRef}
-				className={`absolute top-full left-0 right-0 w-full transform-gpu ${
+				className={`container mx-auto absolute top-full left-0 right-0 w-full transform-gpu ${
 					isScrolled ? "bg-mint/75 backdrop-blur-sm" : "bg-mint"
 				}`}
 				initial={false}
