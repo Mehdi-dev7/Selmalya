@@ -13,7 +13,7 @@ export default function Contact() {
 				className="text-3xl text-center lg:text-left xl:text-[50px] lg:text-[40px] md:text-5xl font-bold !leading-snug text-mint-dark mb-10">
 					Contactez-nous
 				</motion.h1>
-				<div className="flex flex-col lg:flex-row bg-mint/70 rounded-lg p-8 md:p-10 gap-8 lg:gap-24 justify-between shadow-xl ">
+				<div className="flex flex-col lg:flex-row bg-mint/70 rounded-lg p-10 gap-8 lg:gap-24 justify-between shadow-xl ">
 					<ContactLeft />
 					<ContactRight />
 				</div>

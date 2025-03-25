@@ -5,7 +5,7 @@ import ContactInfo from "./ContactInfo";
 
 export default function ContactRight() {
 	return (
-		<div className="flex flex-col items-center justify-center gap-12 w-full lg:w-[30%] mb-30">
+		<div className="flex flex-col items-center justify-center gap-12 w-full lg:w-[30%] mb-10 md:mb-30">
 			<motion.div
 				initial={{ opacity: 0, y: -30 }}
 				whileInView={{ opacity: 1, y: 0 }}

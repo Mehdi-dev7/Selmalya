@@ -12,7 +12,7 @@ export default function ContactInfo() {
 		transition={{ duration: 0.4,delay: 0.6, ease: "easeOut" }}
 		className="flex flex-col gap-4 font-semibold text-mint-dark">
 			{/* Email avec lien mailto */}
-			<div className="flex items-center gap-4 justify-start">
+			<div className="flex items-center gap-2 md:gap-4 justify-start">
 				<HiOutlineMail className="text-3xl" />
 				<a 
 					href="mailto:selmalya.tierspayant@gmail.com" 
