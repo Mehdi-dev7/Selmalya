@@ -47,7 +47,7 @@ export default function Banner() {
 				{/* banner image */}
 				<motion.div
 					className="flex justify-center items-center w-full max-w-xl mx-auto lg:pl-8 order-1 lg:order-2"
-					initial={{ opacity: 0, y: -50 }}
+					initial={{ opacity: 0, y: 50 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ amount: 0.3, once: true }}
 					transition={{ duration: 0.8, delay: 0.4, ease: "easeInOut" }}

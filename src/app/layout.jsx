@@ -83,7 +83,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="fr">
+		<html
+			lang="fr"
+			{...(process.env.NODE_ENV === "development"
+				? { suppressHydrationWarning: true }
+				: {})}
+		>
 			<head>
 				<meta
 					name="viewport"
