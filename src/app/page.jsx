@@ -1,6 +1,7 @@
 "use client";
 
 import Banner from "@/components/Banner/Banner";
+import BannerBis from "@/components/Banner/BannerBis";
 import Banner2 from "@/components/Banner2/Banner2";
 import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
@@ -25,7 +26,7 @@ export default function page() {
 					<Hero />
 				</section>
 				<section id="qui-sommes-nous" className="w-full">
-					<Banner />
+					<BannerBis />
 				</section>
 				<section id="services" className="w-full">
 					{/* <ServicesBis /> */}
