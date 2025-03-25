@@ -78,6 +78,48 @@ export const metadata = {
 	other: {
 		"application-name": "Selmalya",
 		"theme-color": "#88cfac",
+		"apple-mobile-web-app-capable": "yes",
+		"apple-mobile-web-app-status-bar-style": "default",
+		"format-detection": "telephone=no",
+		"mobile-web-app-capable": "yes",
+		"msapplication-TileColor": "#88cfac",
+		"msapplication-config": "/browserconfig.xml",
+	},
+	social: {
+		linkedin: "url-de-votre-page-linkedin",
+	},
+	localBusiness: {
+		"@type": "LocalBusiness",
+		name: "Selmalya",
+		image: "/images/SelmalyaMeta.png",
+		"@id": "https://selmalya-tiers-payant.fr",
+		url: "https://selmalya-tiers-payant.fr",
+		telephone: "votre-telephone",
+		address: {
+			"@type": "PostalAddress",
+			streetAddress: "votre-adresse",
+			addressLocality: "votre-ville",
+			postalCode: "code-postal",
+			addressCountry: "FR",
+		},
+		geo: {
+			"@type": "GeoCoordinates",
+			latitude: "votre-latitude",
+			longitude: "votre-longitude",
+		},
+		openingHoursSpecification: {
+			"@type": "OpeningHoursSpecification",
+			dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+			opens: "09:00",
+			closes: "18:00",
+		},
+	},
+	article: {
+		"@type": "Organization",
+		name: "Selmalya",
+		description: "Expert en gestion de tiers-payant avec 20 ans d'expérience",
+		logo: "/images/SelmalyaMeta.png",
+		sameAs: ["url-linkedin", "autres-reseaux-sociaux"],
 	},
 };
 
@@ -94,11 +136,34 @@ export default function RootLayout({ children }) {
 					name="viewport"
 					content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1"
 				/>
+				<link rel="preconnect" href="https://fonts.googleapis.com" />
+				<link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+				<meta name="format-detection" content="telephone=no" />
+				<link rel="manifest" href="/manifest.json" />
+				<link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 			</head>
 			<body
 				className={`${geistSans.variable} ${poppins.variable} ${inter.variable} antialiased overflow-x-hidden`}
 			>
 				{children}
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{
+						__html: JSON.stringify({
+							"@context": "https://schema.org",
+							"@type": "Organization",
+							name: "Selmalya",
+							url: "https://selmalya-tiers-payant.fr",
+							logo: "url-de-votre-logo",
+							contactPoint: {
+								"@type": "ContactPoint",
+								telephone: "votre-telephone",
+								contactType: "customer service",
+								availableLanguage: ["French"],
+							},
+						}),
+					}}
+				/>
 			</body>
 		</html>
 	);

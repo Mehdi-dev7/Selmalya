@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://selmalya-tiers-payant.fr/sitemap.xml
