@@ -183,7 +183,7 @@ export default function Services() {
 				{/* Logiciels */}
 				<div>
 					<motion.h1
-						className="text-2xl text-center lg:text-left xl:text-[40px] lg:text-[32px] md:text-4xl font-bold !leading-snug text-mint-dark mt-20"
+						className="text-[21px] text-center lg:text-left xl:text-[40px] lg:text-[32px] md:text-4xl font-bold !leading-snug text-mint-dark mt-20"
 						initial={{ opacity: 0, y: 20 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ amount: 0.3, once: true }}
