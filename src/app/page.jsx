@@ -24,11 +24,11 @@ export default function page() {
 				<section id="accueil">
 					<Hero />
 				</section>
-				{/* <section id="qui-sommes-nous">
+				<section id="qui-sommes-nous">
 					<Banner />
-				</section>  */}
+				</section> 
 				<section id="services">
-					{/* <ServicesBis /> */}
+					<ServicesBis />
 					<Banner2 />
 				</section>
 				<section id="contact">
