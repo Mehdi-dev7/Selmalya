@@ -36,7 +36,7 @@ export default function Hero() {
 		<section className="bg-light overflow-hidden relative min-h-screen flex items-center justify-center px-4 md:px-6">
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center w-full">
 				{/* Blob (agrandi au-dessus de md) */}
-				<div className="flex justify-center items-center mb-15 md:mb-30">
+				<div className="flex justify-center items-center  md:mb-30">
 					<MotionImage
 						src={Blob}
 						alt="blob"
