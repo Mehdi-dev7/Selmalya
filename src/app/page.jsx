@@ -14,7 +14,20 @@ import "react-toastify/dist/ReactToastify.css";
 
 export default function page() {
 	useEffect(() => {
-		emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_USER_ID || "USER_ID");
+		const userId = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
+		if (!userId) {
+			console.error(
+				"EmailJS USER_ID non trouvé dans les variables d'environnement"
+			);
+			return;
+		}
+
+		try {
+			emailjs.init(userId);
+			console.log("EmailJS initialisé avec succès");
+		} catch (error) {
+			console.error("Erreur lors de l'initialisation d'EmailJS:", error);
+		}
 	}, []);
 
 	return (

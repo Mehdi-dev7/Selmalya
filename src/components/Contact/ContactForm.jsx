@@ -25,22 +25,20 @@ export default function ContactForm() {
 		setIsSubmitting(true);
 
 		try {
-			const templateParams = {
-				from_name: data.name,
-				from_email: data.email,
-				to_name: "Selmalya",
-				message: data.message,
-				reply_to: data.email,
-				to_email: "selmalya.tierspayant@gmail.com",
-				time: new Date().toLocaleString(),
-			};
+			console.log("Variables EmailJS:", {
+				serviceId: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+				templateId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+				userId: process.env.NEXT_PUBLIC_EMAILJS_USER_ID,
+			});
 
-			const result = await emailjs.send(
+			const result = await emailjs.sendForm(
 				process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
 				process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-				templateParams,
+				formRef.current,
 				process.env.NEXT_PUBLIC_EMAILJS_USER_ID
 			);
+
+			console.log("Résultat de l'envoi:", result);
 
 			if (result.status === 200) {
 				toast.success("Votre message a été envoyé avec succès !", {
@@ -52,17 +50,12 @@ export default function ContactForm() {
 						boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
 					},
 				});
-				reset(); // Réinitialise le formulaire
+				reset();
 			} else {
-				toast.error("Une erreur s'est produite lors de l'envoi du message.", {
-					style: {
-						backgroundColor: "var(--color-red-500)",
-						color: "var(--color-white)",
-					},
-				});
+				throw new Error("Erreur de statut: " + result.status);
 			}
 		} catch (error) {
-			console.error("Erreur d'envoi:", error);
+			console.error("Erreur détaillée:", error);
 			toast.error("Une erreur s'est produite lors de l'envoi du message.", {
 				style: {
 					backgroundColor: "var(--color-red-500)",
@@ -120,6 +113,7 @@ export default function ContactForm() {
 					viewport={{ amount: 0.3, once: true }}
 				>
 					<input
+						name="user_name"
 						type="text"
 						placeholder="Votre Nom ou Société"
 						required
@@ -138,6 +132,7 @@ export default function ContactForm() {
 					viewport={{ amount: 0.3, once: true }}
 				>
 					<input
+						name="user_email"
 						placeholder="Votre Email"
 						className={`h-12 rounded-lg bg-light px-2 w-full border ${
 							errors.email ? "border-red-500" : "border-transparent"
@@ -154,6 +149,7 @@ export default function ContactForm() {
 					viewport={{ amount: 0.3, once: true }}
 				>
 					<textarea
+						name="message"
 						type="text"
 						placeholder="Votre Message"
 						rows={9}
