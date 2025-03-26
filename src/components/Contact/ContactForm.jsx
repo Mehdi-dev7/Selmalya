@@ -25,7 +25,16 @@ export default function ContactForm() {
 		setIsSubmitting(true);
 
 		try {
-			// Vérification des variables requises
+			// Validation explicite de l'email avant tout
+			const emailRegex =
+				/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.(fr|com|net|org|edu|gov|mil|biz|info|io|co|uk|de|eu)$/;
+			if (!emailRegex.test(data.email)) {
+				toast.error("Format d'email invalide (.fr, .com, etc.)");
+				setIsSubmitting(false);
+				return false; // Important : empêche la suite du traitement
+			}
+
+			// Si l'email est valide, on continue avec le reste
 			const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
 			const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
 			const userId = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
@@ -149,6 +158,7 @@ export default function ContactForm() {
 				>
 					<input
 						name="user_email"
+						
 						placeholder="Votre Email"
 						className={`h-12 rounded-lg bg-light px-2 w-full border ${
 							errors.email ? "border-red-500" : "border-transparent"

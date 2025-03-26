@@ -6,17 +6,13 @@ export const contactSchema = z.object({
 		.min(3, { message: "Le nom doit contenir au moins 3 caractères" }),
 	email: z
 		.string()
-		.email({ message: "Format d'email invalide" }) // Validation email de base de Zod
-		.refine(
-			(email) => {
-				// Regex plus stricte pour les domaines
-				const strictEmailRegex =
-					/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.(fr|com|net|org|edu|gov|mil|biz|info|io|co|uk|de|eu)$/;
-				return strictEmailRegex.test(email);
-			},
+		.min(1, { message: "L'email est requis" })
+		.email({ message: "Format d'email invalide" })
+		.regex(
+			/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.(fr|com|net|org|edu|gov|mil|biz|info|io|co|uk|de|eu)$/,
 			{
 				message:
-					"L'email doit se terminer par un domaine valide (.fr, .com, etc.)",
+					"L'email doit se terminer par une extension valide (.fr, .com, etc.)",
 			}
 		),
 	message: z
