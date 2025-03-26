@@ -40,14 +40,14 @@ export default function Hero() {
 					<MotionImage
 						src={Blob}
 						alt="blob"
-						className="absolute w-[580px] md:w-[600px] lg:w-[700px] xl:w-[800px] 2xl:w-[900px] opacity-70"
+						className="absolute w-[580px] md:w-[600px] lg:w-[650px] xl:w-[800px] 2xl:w-[900px] opacity-70"
 						initial={{ x: -50, opacity: 0 }}
 						animate={{ x: 0, opacity: 1 }}
 						transition={{ duration: 0.6, delay: 0.2, ease: "easeInOut" }}
 					/>
 
 					<motion.div
-						className="relative w-[170px] md:w-[250px] lg:w-[300px] xl:w-[350px] 2xl:w-[400px] h-[170px] sm:h-[250px] md:h-[250px] lg:h-[300px] xl:h-[350px] 2xl:h-[400px] rounded-full overflow-hidden border-4 border-white shadow-lg"
+						className="relative w-[170px] md:w-[250px] lg:w-[270px] xl:w-[350px] 2xl:w-[400px] h-[170px] sm:h-[250px] md:h-[250px] lg:h-[270px] xl:h-[350px] 2xl:h-[400px] rounded-full overflow-hidden border-4 border-white shadow-lg"
 						initial={{ x: 50, opacity: 0 }}
 						animate={{ x: 0, opacity: 1 }}
 						transition={{ duration: 0.6, delay: 0.4, ease: "easeInOut" }}

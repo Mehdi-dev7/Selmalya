@@ -29,7 +29,7 @@ export default function Banner() {
 							<span className="text-mint">Tiers-Payant</span>
 						</motion.h2>
 						<motion.p
-							className="text-base sm:text-lg md:text-xl leading-relaxed"
+							className="text-base text-start sm:text-lg md:text-xl leading-relaxed"
 							initial={{ opacity: 0, y: 20 }}
 							whileInView={{ opacity: 1, y: 0 }}
 							viewport={{ amount: 0.3, once: true }}

@@ -127,6 +127,8 @@ export default function RootLayout({ children }) {
 	return (
 		<html
 			lang="fr"
+			className="light"
+			style={{ colorScheme: "light" }}
 			{...(process.env.NODE_ENV === "development"
 				? { suppressHydrationWarning: true }
 				: {})}

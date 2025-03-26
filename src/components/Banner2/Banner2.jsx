@@ -1,6 +1,6 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 import BannerImage from "../../assets/Agreement.svg";
-import { motion } from "framer-motion";
 export default function Banner2() {
 	const listAnimation = {
 		hidden: { opacity: 0 },
@@ -65,32 +65,32 @@ export default function Banner2() {
 						>
 							{/* Liste d'items avec animation */}
 							<motion.li variants={itemAnimation} className="flex items-start">
-								<div className="mt-1 mr-2 sm:mr-3 flex-shrink-0">
-									<div className="flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-mint text-white">
-										<span className="text-center">›</span>
+								<div className="mt-[3px] lg:mt-1 mr-2 sm:mr-3 flex-shrink-0">
+									<div className="flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-mint text-light">
+										<span className="text-center translate-y-[-1px]">›</span>
 									</div>
 								</div>
-								<div className="flex-1">
+								<div className="flex-1 text-start">
 									Une approche personnalisée et un suivi régulier
 								</div>
 							</motion.li>
 							<motion.li variants={itemAnimation} className="flex items-start">
-								<div className="mt-1 mr-2 sm:mr-3 flex-shrink-0">
-									<div className="flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-mint text-white">
-										<span className="text-center">›</span>
+								<div className="mt-[3px] lg:mt-1 mr-2 sm:mr-3 flex-shrink-0">
+									<div className="flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-mint text-light">
+										<span className="text-center translate-y-[-1px]">›</span>
 									</div>
 								</div>
-								<div className="flex-1">
+								<div className="flex-1 text-start">
 									Une maîtrise approfondie des réglementations en vigueur
 								</div>
 							</motion.li>
 							<motion.li variants={itemAnimation} className="flex items-start">
-								<div className="mt-1 mr-2 sm:mr-3 flex-shrink-0">
-									<div className="flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-mint text-white">
-										<span className="text-center">›</span>
+								<div className="mt-[3px] lg:mt-1 mr-2 sm:mr-3 flex-shrink-0">
+									<div className="flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-mint text-light">
+										<span className="text-center translate-y-[-1px]">›</span>
 									</div>
 								</div>
-								<div className="flex-1">
+								<div className="flex-1 text-start">
 									Un gain de temps précieux pour vous concentrer sur vos
 									patients
 								</div>
@@ -103,19 +103,21 @@ export default function Banner2() {
 							viewport={{ amount: 0.3, once: true }}
 							transition={{ duration: 0.6, delay: 0.8 }}
 						>
-							<p>
+							<div className="text-start">
 								<span className="text-mint font-semibold text-xl sm:text-2xl md:text-3xl block sm:inline mb-2 sm:mb-0">
 									Chez Selmalya,
 								</span>
-								nous privilégions une relation de proximité et de confiance.
-								Contrairement aux grandes structures impersonnelles, nous sommes
-								une entreprise à taille humaine, proche de nos clients, et
-								toujours à l'écoute de leurs besoins. Avec nous, vous n'êtes pas
-								un simple numéro, mais un partenaire avec qui nous construisons
-								une relation durable et familiale. Ne laissez plus les problèmes
-								de tiers payant freiner votre activité.
-							</p>
-							<p className="mt-4 sm:mt-6">
+								<p className="">
+									nous privilégions une relation de proximité et de confiance.
+									Contrairement aux grandes structures impersonnelles, nous
+									sommes une entreprise à taille humaine, proche de nos clients,
+									et toujours à l'écoute de leurs besoins. Avec nous, vous
+									n'êtes pas un simple numéro, mais un partenaire avec qui nous
+									construisons une relation durable et familiale. Ne laissez
+									plus les problèmes de tiers payant freiner votre activité.
+								</p>
+							</div>
+							<p className="mt-4 sm:mt-6 text-start">
 								<span className="text-mint font-semibold text-xl sm:text-2xl md:text-3xl block sm:inline mb-2 sm:mb-0">
 									Contactez-nous
 								</span>
