@@ -25,43 +25,59 @@ export default function ContactForm() {
 		setIsSubmitting(true);
 
 		try {
-			console.log("Variables EmailJS:", {
-				serviceId: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-				templateId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-				userId: process.env.NEXT_PUBLIC_EMAILJS_USER_ID,
+			// Vérification des variables requises
+			const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+			const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+			const userId = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
+
+			if (!serviceId || !templateId || !userId) {
+				console.error("Variables EmailJS manquantes:", {
+					serviceId: !!serviceId,
+					templateId: !!templateId,
+					userId: !!userId,
+				});
+				throw new Error("Configuration EmailJS incomplète");
+			}
+
+			console.log("Configuration EmailJS:", {
+				serviceId: "✓ Présent",
+				templateId: "✓ Présent",
+				userId: "✓ Présent",
 			});
 
 			const result = await emailjs.sendForm(
-				process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-				process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+				serviceId,
+				templateId,
 				formRef.current,
-				process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+				userId
 			);
 
-			console.log("Résultat de l'envoi:", result);
+			console.log(
+				"Statut de l'envoi:",
+				result.status === 200 ? "Succès" : "Échec"
+			);
 
 			if (result.status === 200) {
-				toast.success("Votre message a été envoyé avec succès !", {
-					style: {
-						backgroundColor: "var(--color-mint-dark)",
-						color: "var(--color-light)",
-						borderRadius: "0.5rem",
-						border: "1px solid var(--color-light)",
-						boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-					},
-				});
+				toast.success("Votre message a été envoyé avec succès !");
 				reset();
 			} else {
 				throw new Error("Erreur de statut: " + result.status);
 			}
 		} catch (error) {
-			console.error("Erreur détaillée:", error);
-			toast.error("Une erreur s'est produite lors de l'envoi du message.", {
-				style: {
-					backgroundColor: "var(--color-red-500)",
-					color: "var(--color-white)",
-				},
-			});
+			console.error("Type d'erreur:", error.name);
+			console.error(
+				"Message d'erreur:",
+				error.message.replace(
+					new RegExp(process.env.NEXT_PUBLIC_EMAILJS_USER_ID, "g"),
+					"****"
+				)
+			);
+
+			toast.error(
+				error.message === "Configuration EmailJS incomplète"
+					? "Erreur de configuration du formulaire"
+					: "Une erreur s'est produite lors de l'envoi du message."
+			);
 		} finally {
 			setIsSubmitting(false);
 		}
