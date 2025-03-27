@@ -21,17 +21,18 @@ const inter = Inter({
 });
 
 export const metadata = {
-	title: "Selmalya - Gestion Professionnelle de Tiers-Payant",
+	title:
+		"Selmalya - Expert en Gestion de Tiers-Payant | Solutions Professionnelles",
 	description:
-		"Expert en gestion de tiers-payant avec 20 ans d'expérience. Selmalya propose des solutions personnalisées pour pharmacies et professionnels de santé. Optimisez vos remboursements et simplifiez votre gestion administrative.",
+		"Expert en gestion de tiers-payant avec 20 ans d'expérience. Solutions personnalisées pour pharmacies et professionnels de santé. Optimisation des remboursements, délais réduits, expertise mutuelle. Service client dédié à toute la France.",
 	keywords:
-		"tiers-payant, gestion tiers-payant, solution médicale, gestion santé, pharmacie, professionnel santé, mutuelle santé, remboursement santé, gestion pharmacie, tiers payant pharmacie, expert tiers-payant",
+		"tiers-payant, gestion tiers-payant, solution pharmacie France, remboursement santé, logiciel tiers-payant, SESAM-Vitale, télétransmission, facturation santé, recouvrement santé, mutuelle pharmacie",
 	authors: [{ name: "Selmalya" }],
 	metadataBase: new URL("https://selmalya-tiers-payant.fr"),
 	openGraph: {
 		title: "Selmalya - Expert en Gestion de Tiers-Payant",
 		description:
-			"Solutions professionnelles de gestion tiers-payant pour le secteur médical",
+			"Expert en gestion de tiers-payant depuis 20 ans. Solutions personnalisées, délais optimisés, expertise mutuelle. Service client dédié en France.",
 		type: "website",
 		locale: "fr_FR",
 		images: [
@@ -44,6 +45,19 @@ export const metadata = {
 		],
 		siteName: "Selmalya",
 		url: "https://selmalya-tiers-payant.fr",
+		article: {
+			authors: ["Selmalya"],
+			tags: [
+				"tiers-payant",
+				"pharmacie",
+				"santé",
+				"gestion",
+				"Villetaneuse",
+				"Île-de-France",
+			],
+			section: "Services de Santé",
+			publishedTime: "2024-03-27",
+		},
 	},
 	twitter: {
 		card: "summary_large_image",
@@ -121,6 +135,37 @@ export const metadata = {
 		logo: "/images/SelmalyaMeta.png",
 		sameAs: ["url-linkedin", "autres-reseaux-sociaux"],
 	},
+	services: {
+		"@type": "Service",
+		serviceType: "Gestion de Tiers-Payant",
+		provider: {
+			"@type": "Organization",
+			name: "Selmalya",
+			areaServed: "Île-de-France",
+		},
+		hasOfferCatalog: {
+			"@type": "OfferCatalog",
+			name: "Services Tiers-Payant",
+			itemListElement: [
+				{
+					"@type": "Offer",
+					itemOffered: {
+						"@type": "Service",
+						name: "Gestion des rejets",
+						description: "Traitement et suivi des rejets de remboursement",
+					},
+				},
+				{
+					"@type": "Offer",
+					itemOffered: {
+						"@type": "Service",
+						name: "Télétransmission",
+						description: "Service de télétransmission SESAM-Vitale",
+					},
+				},
+			],
+		},
+	},
 };
 
 export default function RootLayout({ children }) {
@@ -157,12 +202,23 @@ export default function RootLayout({ children }) {
 							name: "Selmalya",
 							url: "https://selmalya-tiers-payant.fr",
 							logo: "/images/selmalyapng.png",
+							description:
+								"Expert en gestion de tiers-payant avec 20 ans d'expérience",
+							address: {
+								"@type": "PostalAddress",
+								streetAddress: "7, allée André Malraux",
+								addressLocality: "Villetaneuse",
+								postalCode: "93400",
+								addressCountry: "FR",
+							},
 							contactPoint: {
 								"@type": "ContactPoint",
 								telephone: "0184210733",
 								contactType: "customer service",
 								availableLanguage: ["French"],
+								areaServed: "France",
 							},
+							sameAs: [""],
 						}),
 					}}
 				/>
