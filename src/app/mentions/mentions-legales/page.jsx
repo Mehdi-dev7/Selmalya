@@ -44,14 +44,21 @@ export default function MentionsLegales() {
 			<section className="mb-6">
 				<h2 className="text-xl font-semibold">4. Hébergeur du site</h2>
 				<p>
-					<strong>Nom :</strong> À définir
+					<strong>Nom : OVHcloud</strong>
 				</p>
 				<p>
-					<strong>Adresse :</strong> À définir
+					<strong>Adresse :</strong> 2 rue Kellermann - 59100 Roubaix - France
 				</p>
 				<p>
-					<strong>Téléphone :</strong> À définir
+					<strong>Téléphone :</strong> +33 (0)9 72 10 10 07
 				</p>
+				<p>
+					<strong>Email :</strong> support@ovhcloud.com
+				</p>
+				<p>
+					<strong>Site web :</strong> https://www.ovhcloud.com
+				</p>
+				
 			</section>
 
 			<section>

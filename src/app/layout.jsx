@@ -66,8 +66,8 @@ export const metadata = {
 		nocache: false,
 	},
 	verification: {
-		google: "votre-code-verification-google",
-		yandex: "votre-code-yandex",
+		google: "YwecL98dGul6PAhjxjPQYImTrL6NJnt4rcmaL985UZU",
+		yandex: "",
 	},
 	alternates: {
 		canonical: "https://selmalya-tiers-payant.fr",
@@ -94,18 +94,18 @@ export const metadata = {
 		image: "/images/SelmalyaMeta.png",
 		"@id": "https://selmalya-tiers-payant.fr",
 		url: "https://selmalya-tiers-payant.fr",
-		telephone: "votre-telephone",
+		telephone: "0184210733",
 		address: {
 			"@type": "PostalAddress",
-			streetAddress: "votre-adresse",
-			addressLocality: "votre-ville",
-			postalCode: "code-postal",
+			streetAddress: "7, allée André Malraux",
+			addressLocality: "Villetaneuse",
+			postalCode: "93400",
 			addressCountry: "FR",
 		},
 		geo: {
 			"@type": "GeoCoordinates",
-			latitude: "votre-latitude",
-			longitude: "votre-longitude",
+			latitude: "48.9611722",
+			longitude: "2.3439698",
 		},
 		openingHoursSpecification: {
 			"@type": "OpeningHoursSpecification",
@@ -156,10 +156,10 @@ export default function RootLayout({ children }) {
 							"@type": "Organization",
 							name: "Selmalya",
 							url: "https://selmalya-tiers-payant.fr",
-							logo: "url-de-votre-logo",
+							logo: "/images/selmalyapng.png",
 							contactPoint: {
 								"@type": "ContactPoint",
-								telephone: "votre-telephone",
+								telephone: "0184210733",
 								contactType: "customer service",
 								availableLanguage: ["French"],
 							},
