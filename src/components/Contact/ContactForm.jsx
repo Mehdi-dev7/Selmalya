@@ -54,10 +54,23 @@ export default function ContactForm() {
 				userId: "✓ Présent",
 			});
 
-			const result = await emailjs.sendForm(
+			// Ajout d'informations supplémentaires
+			const templateParams = {
+				user_name: data.name,
+				user_email: data.email,
+				message: data.message,
+				time: new Date().toLocaleString("fr-FR", {
+					dateStyle: "long",
+					timeStyle: "short",
+				}),
+				page_url: window.location.href,
+				ip: "Information collectée côté serveur", // À gérer côté serveur si nécessaire
+			};
+
+			const result = await emailjs.send(
 				serviceId,
 				templateId,
-				formRef.current,
+				templateParams,
 				userId
 			);
 
@@ -158,7 +171,6 @@ export default function ContactForm() {
 				>
 					<input
 						name="user_email"
-						
 						placeholder="Votre Email"
 						className={`h-12 rounded-lg bg-light px-2 w-full border ${
 							errors.email ? "border-red-500" : "border-transparent"
