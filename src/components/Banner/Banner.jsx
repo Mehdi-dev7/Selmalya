@@ -35,7 +35,7 @@ export default function Banner() {
 							viewport={{ amount: 0.3, once: true }}
 							transition={{ duration: 0.6, delay: 0.3 }}
 						>
-							Avec 20 ans d'expérience en pharmacie, Selmalya est le partenaire
+							Avec 20 ans d'expérience en pharmacie, <span className="text-mint font-semibold md:text-2xl text-xl">Selmalya</span> est le partenaire
 							de confiance des officines pour l'externalisation du tiers payant.
 							Nous comprenons les défis quotidiens des pharmaciens et offrons
 							des solutions sur mesure pour optimiser la gestion administrative
