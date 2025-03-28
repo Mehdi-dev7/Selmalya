@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
 Disallow: /#*
+Disallow: /assets/blob-selmalya.svg
+Disallow: /assets/*
+Allow: /assets/selmalyapng.png
 
 Sitemap: https://selmalya-tiers-payant.fr/sitemap.xml

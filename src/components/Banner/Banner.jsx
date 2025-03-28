@@ -35,11 +35,15 @@ export default function Banner() {
 							viewport={{ amount: 0.3, once: true }}
 							transition={{ duration: 0.6, delay: 0.3 }}
 						>
-							Avec 20 ans d'expérience en pharmacie, <span className="text-mint font-semibold md:text-2xl text-xl">Selmalya</span> est le partenaire
-							de confiance des officines pour l'externalisation du tiers payant.
-							Nous comprenons les défis quotidiens des pharmaciens et offrons
-							des solutions sur mesure pour optimiser la gestion administrative
-							et réduire les rejets de factures.
+							Avec 20 ans d'expérience en pharmacie,{" "}
+							<span className="text-mint font-semibold md:text-2xl text-xl">
+								Selmalya
+							</span>{" "}
+							est le partenaire de confiance des officines pour
+							l'externalisation du tiers payant. Nous comprenons les défis
+							quotidiens des pharmaciens et offrons des solutions sur mesure
+							pour optimiser la gestion administrative et réduire les rejets de
+							factures.
 						</motion.p>
 					</div>
 				</div>
@@ -54,7 +58,7 @@ export default function Banner() {
 				>
 					<Image
 						src={BannerImage}
-						alt="Selmalya description"
+						alt=""
 						className="w-full max-w-[280px] sm:max-w-md md:max-w-lg lg:w-[100%] h-auto"
 					/>
 				</motion.div>

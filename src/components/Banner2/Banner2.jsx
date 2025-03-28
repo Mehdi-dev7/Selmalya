@@ -39,7 +39,7 @@ export default function Banner2() {
 				>
 					<Image
 						src={BannerImage}
-						alt="Selmalya partenariat"
+						alt=""
 						className="w-full max-w-[280px] sm:max-w-md md:max-w-lg lg:w-[100%] h-auto"
 					/>
 				</motion.div>

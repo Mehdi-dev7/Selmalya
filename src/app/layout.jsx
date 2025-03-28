@@ -190,6 +190,11 @@ export default function RootLayout({ children }) {
 				<link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 				<meta name="fragment" content="!" />
 				<meta name="google" content="notranslate" />
+				<meta name="robots" content="max-image-preview:large" />
+				<meta
+					property="og:image"
+					content="https://selmalya-tiers-payant.fr/assets/selmalyapng.png"
+				/>
 			</head>
 			<body
 				className={`${geistSans.variable} ${poppins.variable} ${inter.variable} antialiased overflow-x-hidden`}

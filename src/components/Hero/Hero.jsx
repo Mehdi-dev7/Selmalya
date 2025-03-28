@@ -39,7 +39,7 @@ export default function Hero() {
 				<div className="flex justify-center items-center px-4 md:px-10">
 					<MotionImage
 						src={Blob}
-						alt="blob"
+						alt=""
 						className="absolute w-[580px] md:w-[600px] lg:w-[650px] xl:w-[800px] 2xl:w-[900px] opacity-70"
 						initial={{ x: -50, opacity: 0 }}
 						animate={{ x: 0, opacity: 1 }}
@@ -54,7 +54,8 @@ export default function Hero() {
 					>
 						<Image
 							src={HeroPng}
-							alt="hero"
+							alt="Selmalya - Spécialiste du tiers-payant"
+							priority
 							className="absolute inset-0 w-full h-full object-contain bg-white"
 						/>
 					</motion.div>
