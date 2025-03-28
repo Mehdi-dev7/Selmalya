@@ -188,6 +188,8 @@ export default function RootLayout({ children }) {
 				<meta name="format-detection" content="telephone=no" />
 				<link rel="manifest" href="/manifest.json" />
 				<link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+				<meta name="fragment" content="!" />
+				<meta name="google" content="notranslate" />
 			</head>
 			<body
 				className={`${geistSans.variable} ${poppins.variable} ${inter.variable} antialiased overflow-x-hidden`}
