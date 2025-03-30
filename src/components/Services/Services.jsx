@@ -210,6 +210,7 @@ export default function Services() {
 										src={software.icon}
 										alt={software.title}
 										className="rounded-full w-16 h-16 object-cover border-2 border-white"
+										quality={75}
 									/>
 									<h2 className="md:text-lg font-semibold text-center px-4">
 										{software.title}
@@ -229,6 +230,7 @@ export default function Services() {
 									src={desktop}
 									alt="ordi"
 									className="w-full max-w-md md:max-w-xl xl:w-[600px] h-auto"
+									quality={75}
 								/>
 							</motion.div>
 						</div>

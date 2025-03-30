@@ -12,7 +12,7 @@ export default function ContactRight() {
 				viewport={{ once: true, amount: 0.3 }}
 				transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
 			>
-				<Image src={email} alt="" className="max-w-[300px]" />
+				<Image src={email} alt="" className="max-w-[300px]" quality={75} />
 			</motion.div>
 			<ContactInfo />
 		</div>

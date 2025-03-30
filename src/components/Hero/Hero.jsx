@@ -41,6 +41,7 @@ export default function Hero() {
 						src={Blob}
 						alt=""
 						className="absolute w-[580px] md:w-[600px] lg:w-[650px] xl:w-[800px] 2xl:w-[900px] opacity-70"
+						quality={75}
 						initial={{ x: -50, opacity: 0 }}
 						animate={{ x: 0, opacity: 1 }}
 						transition={{ duration: 0.6, delay: 0.2, ease: "easeInOut" }}
@@ -56,6 +57,7 @@ export default function Hero() {
 							src={HeroPng}
 							alt="Selmalya - Spécialiste du tiers-payant"
 							priority
+							quality={85}
 							className="absolute inset-0 w-full h-full object-contain bg-white"
 						/>
 					</motion.div>

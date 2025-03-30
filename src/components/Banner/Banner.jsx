@@ -60,6 +60,7 @@ export default function Banner() {
 						src={BannerImage}
 						alt=""
 						className="w-full max-w-[280px] sm:max-w-md md:max-w-lg lg:w-[100%] h-auto"
+						quality={75}
 					/>
 				</motion.div>
 			</div>
