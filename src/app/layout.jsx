@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Geist, Inter, Poppins } from "next/font/google";
 import "./globals.css";
 
@@ -200,6 +201,7 @@ export default function RootLayout({ children }) {
 				className={`${geistSans.variable} ${poppins.variable} ${inter.variable} antialiased overflow-x-hidden`}
 			>
 				{children}
+				<SpeedInsights />
 				<script
 					type="application/ld+json"
 					dangerouslySetInnerHTML={{
