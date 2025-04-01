@@ -53,6 +53,34 @@ const nextConfig = {
 
 	// Configuration du comportement strict
 	reactStrictMode: true,
+
+	
+	async redirects() {
+		return [
+			{
+				source: "/:path*",
+				has: [
+					{
+						type: "host",
+						value: "www.selmalya-tiers-payant.fr",
+					},
+				],
+				destination: "https://selmalya-tiers-payant.fr/:path*",
+				permanent: true,
+			},
+			{
+				source: "/:path*",
+				has: [
+					{
+						type: "host",
+						value: "selmalya-tiers-payant.fr:80",
+					},
+				],
+				destination: "https://selmalya-tiers-payant.fr/:path*",
+				permanent: true,
+			},
+		];
+	},
 };
 
 export default nextConfig;
