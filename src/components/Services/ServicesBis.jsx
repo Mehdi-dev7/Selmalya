@@ -71,7 +71,7 @@ export default function ServicesBis() {
 					transition={{ duration: 0.6, delay: 0.3 }}
 				>
 					{/* En-tête de la formule */}
-					<div className="bg-mint/20 p-8 text-center">
+					<div className="bg-mint/50 p-8 text-center">
 						<h2 className="text-3xl font-bold text-mint-dark mb-2">
 							Pack Professionnel
 						</h2>
@@ -86,7 +86,7 @@ export default function ServicesBis() {
 
 					{/* Liste des services */}
 					<div className="p-8">
-						<div className="border-2 border-mint rounded-xl p-6">
+						<div className="border-2 border-mint rounded-xl p-6 bg-light/50">
 							<div className="grid gap-6">
 								{services.map((service) => (
 									<motion.div
