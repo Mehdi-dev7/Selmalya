@@ -49,12 +49,10 @@ const nextConfig = {
 
 	// Optimisations de production
 	productionBrowserSourceMaps: false,
-	swcMinify: true,
 
 	// Configuration du comportement strict
 	reactStrictMode: true,
 
-	
 	async redirects() {
 		return [
 			{

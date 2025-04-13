@@ -6,7 +6,8 @@ import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 import Hero from "@/components/Hero/Hero";
 import Navbar from "@/components/Navbar/Navbar";
-import Services from "@/components/Services/Services";
+// import Services from "@/components/Services/Services";
+import ServicesBis from "@/components/Services/ServicesBis";
 import emailjs from "@emailjs/browser";
 import { useEffect } from "react";
 import { ToastContainer } from "react-toastify";
@@ -41,7 +42,7 @@ export default function page() {
 					<Banner />
 				</section>
 				<section id="services" className="w-full">
-					<Services />
+					<ServicesBis />
 					<Banner2 />
 				</section>
 				<section id="contact" className="w-full">

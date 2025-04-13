@@ -25,7 +25,7 @@ export default function Banner() {
 							viewport={{ amount: 0.3, once: true }}
 							transition={{ duration: 0.6, delay: 0.4, ease: "easeInOut" }}
 						>
-							Votre Expert en Gestion du{" "}
+							Spécialiste du{" "}
 							<span className="text-mint">Tiers-Payant</span>
 						</motion.h2>
 						<motion.p
@@ -39,7 +39,7 @@ export default function Banner() {
 							<span className="text-mint font-semibold md:text-2xl text-xl">
 								Selmalya
 							</span>{" "}
-							est le partenaire de confiance des officines pour
+							est le partenaire de confiance des pharmacies pour
 							l'externalisation du tiers payant. Nous comprenons les défis
 							quotidiens des pharmaciens et offrons des solutions sur mesure
 							pour optimiser la gestion administrative et réduire les rejets de

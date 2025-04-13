@@ -40,7 +40,7 @@ export default function Hero() {
 					<MotionImage
 						src={Blob}
 						alt=""
-						className="absolute w-[580px] md:w-[600px] lg:w-[650px] xl:w-[800px] 2xl:w-[900px] opacity-70"
+						className="absolute w-[580px] md:w-[600px] lg:w-[650px] xl:w-[750px] 2xl:w-[900px] opacity-70"
 						quality={75}
 						initial={{ x: -50, opacity: 0 }}
 						animate={{ x: 0, opacity: 1 }}
@@ -48,7 +48,7 @@ export default function Hero() {
 					/>
 
 					<motion.div
-						className="relative w-[170px] md:w-[250px] lg:w-[270px] xl:w-[350px] 2xl:w-[400px] h-[170px] sm:h-[250px] md:h-[250px] lg:h-[270px] xl:h-[350px] 2xl:h-[400px] rounded-full overflow-hidden border-4 border-white shadow-lg"
+						className="relative w-[170px] md:w-[250px] lg:w-[270px] xl:w-[330px] 2xl:w-[400px] h-[170px] sm:h-[250px] md:h-[250px] lg:h-[270px] xl:h-[330px] 2xl:h-[400px] rounded-full overflow-hidden border-4 border-white shadow-lg"
 						initial={{ x: 50, opacity: 0 }}
 						animate={{ x: 0, opacity: 1 }}
 						transition={{ duration: 0.6, delay: 0.4, ease: "easeInOut" }}
@@ -79,7 +79,7 @@ export default function Hero() {
 						animate="animate"
 						variants={FadeUp(0.6)}
 					>
-						Spécialiste du <span className="text-mint">Tiers-Payant</span>
+						Votre expert en gestion du <span className="text-mint">Tiers-Payant</span>
 					</motion.p>
 					<motion.div
 						initial="initial"
