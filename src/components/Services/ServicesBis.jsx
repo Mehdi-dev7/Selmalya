@@ -78,8 +78,9 @@ export default function ServicesBis() {
 						<p className="text-gray-600 mb-4">
 							Solution complète pour votre gestion de tiers-payant
 						</p>
-						<div className="text-4xl font-bold text-mint-dark">
-							À partir de 55€
+						<div className="text-3xl font-bold text-mint-dark ml-2">
+							À partir de 165€{" "}
+							<span className="text-lg font-normal italic">/mois</span>
 						</div>
 					</div>
 
