@@ -1,8 +1,24 @@
 User-agent: *
 Allow: /
 Disallow: /#*
+
+# Autoriser les assets importants
+Allow: /assets/selmalyapng.png
+Allow: /images/
+Allow: /icons/
+
+# Bloquer les assets non essentiels
 Disallow: /assets/blob-selmalya.svg
-Disallow: /assets/*
+Disallow: /assets/temp/
+Disallow: /assets/dev/
+
+# Configuration pour les images
+User-agent: Googlebot-Image
+Allow: /images/
 Allow: /assets/selmalyapng.png
 
+# Sitemap
 Sitemap: https://selmalya-tiers-payant.fr/sitemap.xml
+
+# Host
+Host: https://selmalya-tiers-payant.fr
