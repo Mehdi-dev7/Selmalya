@@ -13,7 +13,7 @@ import { useEffect } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-export default function page() {
+export default function Page() {
 	useEffect(() => {
 		const userId = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
 		if (!userId) {
