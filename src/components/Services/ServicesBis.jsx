@@ -64,14 +64,14 @@ export default function ServicesBis() {
 				</motion.h1>
 
 				<motion.div
-					className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden"
+					className="max-w-4xl mx-auto bg-light/50 rounded-3xl shadow-xl overflow-hidden"
 					initial={{ opacity: 0, y: 30 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true }}
 					transition={{ duration: 0.6, delay: 0.3 }}
 				>
 					{/* En-tête de la formule */}
-					<div className="bg-mint/50 p-8 text-center">
+					<div className="bg-mint/70 p-8 text-center">
 						<h2 className="text-3xl font-bold text-mint-dark mb-2">
 							Pack Professionnel
 						</h2>
