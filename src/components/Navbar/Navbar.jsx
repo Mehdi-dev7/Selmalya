@@ -111,12 +111,8 @@ export default function Navbar() {
 				{/* Hamburger section */}
 				<div className="lg:hidden" ref={hamburgerRef}>
 					<IoMdMenu
-						onClick={() => {
-							setIsOpen(!isOpen);
-						}}
-						className={`text-4xl cursor-pointer ${
-							isOpen ? "text-mint-dark" : "text-light"
-						} hover:text-mint-dark transition-all duration-300`}
+						onClick={() => setIsOpen(!isOpen)}
+						className="text-4xl text-light cursor-pointer"
 					/>
 				</div>
 			</motion.div>
@@ -125,21 +121,21 @@ export default function Navbar() {
 				ref={menuRef}
 				className={`absolute top-full left-0 right-0 transition-all duration-300 ${
 					isOpen ? "max-h-[300px]" : "max-h-0 opacity-0 pointer-events-none"
-				} ${isScrolled ? "bg-mint/75 backdrop-blur-sm" : "bg-mint"}`}
+				} ${isScrolled ? "bg-mint/55 backdrop-blur-sm" : "bg-mint"}`}
 			>
 				<ul className="flex flex-col items-center py-4 space-y-4 border-t border-light/70">
 					{NavbarMenu.map((menu) => (
-						<li className="w-full text-center group" key={menu.id}>
+						<li className="w-full text-center" key={menu.id}>
 							<LinkScroll
 								to={menu.link}
 								spy={true}
 								smooth={true}
 								offset={-70}
 								duration={500}
-								className="font-semibold text-light cursor-pointer hover:text-mint-dark duration-200 block py-2"
+								className="font-semibold text-light cursor-pointer hover:text-mint-dark duration-200 inline-block"
 								onClick={() => setIsOpen(false)}
 							>
-								<span className="relative inline-block">
+								<span className="relative inline-block py-2 group">
 									{menu.title}
 									<div className="absolute left-0 right-0 bottom-0 mx-auto bg-mint-dark w-0 group-hover:w-full h-[1px] transition-all duration-500"></div>
 								</span>
