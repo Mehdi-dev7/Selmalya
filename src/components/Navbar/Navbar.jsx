@@ -112,7 +112,9 @@ export default function Navbar() {
 				<div className="lg:hidden" ref={hamburgerRef}>
 					<IoMdMenu
 						onClick={() => setIsOpen(!isOpen)}
-						className="text-4xl text-light cursor-pointer hover:text-mint-dark"
+						className={`text-4xl cursor-pointer transition-colors duration-200 ${
+							isOpen ? "text-mint-dark" : "text-light hover:text-mint-dark"
+						}`}
 					/>
 				</div>
 			</motion.div>
