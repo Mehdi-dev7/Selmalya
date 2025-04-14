@@ -30,7 +30,7 @@ export default function Hero() {
 		console.log("Navigation vers la section contact");
 	};
 
-	const MotionImage = motion(Image);
+	const MotionImage = motion.create(Image);
 
 	return (
 		<section className="bg-light min-h-[800px] sm:min-h-screen flex items-center justify-center py-10 sm:py-16">
@@ -79,7 +79,8 @@ export default function Hero() {
 						animate="animate"
 						variants={FadeUp(0.6)}
 					>
-						Votre expert en gestion du <span className="text-mint">Tiers-Payant</span>
+						Votre expert en gestion du{" "}
+						<span className="text-mint">Tiers-Payant</span>
 					</motion.p>
 					<motion.div
 						initial="initial"
