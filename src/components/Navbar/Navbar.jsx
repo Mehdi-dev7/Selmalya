@@ -68,7 +68,7 @@ export default function Navbar() {
 	return (
 		<nav
 			className={`fixed top-0 left-0 right-0 z-[999] ${
-				isScrolled ? "bg-mint/55 backdrop-blur-sm" : "bg-mint"
+				isScrolled ? "bg-mint/60 backdrop-blur-sm" : "bg-mint"
 			}`}
 		>
 			<motion.div
@@ -121,7 +121,7 @@ export default function Navbar() {
 				ref={menuRef}
 				className={`absolute top-full left-0 right-0 transition-all duration-300 ${
 					isOpen ? "max-h-[300px]" : "max-h-0 opacity-0 pointer-events-none"
-				} ${isScrolled ? "bg-mint/55 backdrop-blur-sm" : "bg-mint"}`}
+				} ${isScrolled ? "bg-mint/60 backdrop-blur-sm" : "bg-mint"}`}
 			>
 				<ul className="flex flex-col items-center py-4 space-y-4 border-t border-light/70">
 					{NavbarMenu.map((menu) => (
