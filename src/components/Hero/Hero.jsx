@@ -73,7 +73,7 @@ export default function Hero() {
 					>
 						Selmalya
 					</motion.h1>
-					<motion.p
+					<motion.h2
 						className="text-lg md:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl font-semibold"
 						initial="initial"
 						animate="animate"
@@ -81,7 +81,7 @@ export default function Hero() {
 					>
 						Votre expert en gestion du{" "}
 						<span className="text-mint">Tiers-Payant</span>
-					</motion.p>
+					</motion.h2>
 					<motion.div
 						initial="initial"
 						animate="animate"

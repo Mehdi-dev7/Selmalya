@@ -29,7 +29,7 @@ export const metadata = {
 	description:
 		"Expert en gestion de tiers-payant avec 20 ans d'expérience. Solutions personnalisées pour pharmacies et professionnels de santé. Optimisation des remboursements, délais réduits, expertise mutuelle. Service client dédié à toute la France.",
 	keywords:
-		"tiers-payant, gestion tiers-payant,spécialiste du tiers-payant, solution pharmacie France, remboursement santé, logiciel tiers-payant, SESAM-Vitale, télétransmission, facturation santé, recouvrement santé, mutuelle pharmacie",
+		"tiers-payant, gestion tiers-payant,spécialiste du tiers-payant,externalisation du tiers-payant, solution pharmacie France, remboursement santé, logiciel tiers-payant, SESAM-Vitale, télétransmission, facturation santé, recouvrement santé, mutuelle pharmacie",
 	authors: [{ name: "Selmalya" }],
 	metadataBase: new URL("https://selmalya-tiers-payant.fr"),
 	openGraph: {

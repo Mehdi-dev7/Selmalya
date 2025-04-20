@@ -25,7 +25,7 @@ export default function Banner() {
 							viewport={{ amount: 0.3, once: true }}
 							transition={{ duration: 0.6, delay: 0.4, ease: "easeInOut" }}
 						>
-							Spécialiste du{" "}
+							Spécialiste de l'externalisation du{" "}
 							<span className="text-mint">Tiers-Payant</span>
 						</motion.h2>
 						<motion.p
