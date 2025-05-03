@@ -68,7 +68,7 @@ export default function Navbar() {
 	return (
 		<nav
 			className={`fixed top-0 left-0 right-0 z-[999] ${
-				isScrolled ? "bg-mint/60 backdrop-blur-sm" : "bg-mint"
+				isScrolled && !isOpen ? "bg-mint/60 backdrop-blur-sm" : "bg-mint"
 			}`}
 		>
 			<motion.div
