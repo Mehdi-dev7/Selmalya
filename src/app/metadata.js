@@ -1,5 +1,5 @@
 export const metadata = {
 	alternates: {
-		canonical: "https://selmalya-tiers-payant.fr",
+		canonical: "https://www.selmalya-tiers-payant.fr", 
 	},
 };
