@@ -41,7 +41,7 @@ const nextConfig = {
 
 	// Configuration des images
 	images: {
-		domains: ["selmalya-tiers-payant.fr"], // Ajoutez vos domaines d'images
+		domains: ["www.selmalya-tiers-payant.fr"], // Ajoutez vos domaines d'images
 		deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
 		imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
 		formats: ["image/webp"],
@@ -53,32 +53,7 @@ const nextConfig = {
 	// Configuration du comportement strict
 	reactStrictMode: true,
 
-	async redirects() {
-		return [
-			{
-				source: "/:path*",
-				has: [
-					{
-						type: "host",
-						value: "www.selmalya-tiers-payant.fr",
-					},
-				],
-				destination: "https://selmalya-tiers-payant.fr/:path*",
-				permanent: true,
-			},
-			{
-				source: "/:path*",
-				has: [
-					{
-						type: "host",
-						value: "selmalya-tiers-payant.fr:80",
-					},
-				],
-				destination: "https://selmalya-tiers-payant.fr/:path*",
-				permanent: true,
-			},
-		];
-	},
+	
 };
 
 export default nextConfig;
