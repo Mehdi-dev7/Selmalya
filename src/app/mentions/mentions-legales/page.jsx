@@ -1,6 +1,17 @@
 import FooterLegal from "@/components/Footer/FooterLegal";
 import NavbarLegal from "@/components/Navbar/NavbarLegal";
 
+export const metadata = {
+	title: "Mentions Légales | Selmalya",
+	description:
+		"Mentions légales de Selmalya, expert en gestion de tiers-payant pour les pharmacies et professionnels de santé.",
+	alternates: {
+		canonical:
+			"https://www.selmalya-tiers-payant.fr/mentions/mentions-legales",
+	},
+	robots: { index: true, follow: true },
+};
+
 export default function MentionsLegales() {
 	return (
 		<>

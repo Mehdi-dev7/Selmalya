@@ -3,6 +3,18 @@ const nextConfig = {
 	// Compression activée par défaut en production
 	compress: true,
 
+	// Redirection non-www → www (résout le problème de page en double)
+	async redirects() {
+		return [
+			{
+				source: "/:path*",
+				has: [{ type: "host", value: "selmalya-tiers-payant.fr" }],
+				destination: "https://www.selmalya-tiers-payant.fr/:path*",
+				permanent: true, // 301
+			},
+		];
+	},
+
 	// Configuration des en-têtes HTTP
 	async headers() {
 		return [

@@ -1,6 +1,16 @@
 import FooterLegal from "@/components/Footer/FooterLegal";
 import NavbarLegal from "@/components/Navbar/NavbarLegal";
 
+export const metadata = {
+	title: "Conditions Générales de Vente | Selmalya",
+	description:
+		"Consultez les conditions générales de vente des services de gestion de tiers-payant proposés par Selmalya.",
+	alternates: {
+		canonical: "https://www.selmalya-tiers-payant.fr/mentions/cgv",
+	},
+	robots: { index: true, follow: true },
+};
+
 export default function CGV() {
 	return (
 		<>

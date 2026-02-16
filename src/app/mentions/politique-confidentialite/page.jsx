@@ -1,6 +1,17 @@
 import FooterLegal from "@/components/Footer/FooterLegal";
 import NavbarLegal from "@/components/Navbar/NavbarLegal";
 
+export const metadata = {
+	title: "Politique de Confidentialité | Selmalya",
+	description:
+		"Politique de confidentialité et traitement des données personnelles de Selmalya, conforme au RGPD.",
+	alternates: {
+		canonical:
+			"https://www.selmalya-tiers-payant.fr/mentions/politique-confidentialite",
+	},
+	robots: { index: true, follow: true },
+};
+
 export default function PolitiqueConfidentialite() {
 	return (
 		<>
