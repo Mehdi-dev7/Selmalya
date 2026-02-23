@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "selmalya-tiers-payant.fr" }],
+      "destination": "https://www.selmalya-tiers-payant.fr/:path*",
+      "permanent": true
+    }
+  ]
+}
