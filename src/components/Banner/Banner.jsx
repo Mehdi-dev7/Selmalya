@@ -4,7 +4,7 @@ import BannerImage from "../../assets/Designer.svg";
 
 export default function Banner() {
 	return (
-		<section className="bg-light/50 min-h-[800px] sm:min-h-[1000px] flex items-center justify-center py-10 sm:py-16">
+		<section className="bg-light-muted min-h-[800px] sm:min-h-[1000px] flex items-center justify-center py-10 sm:py-16">
 			<div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-4 sm:px-6 md:px-8 py-8 md:py-24">
 				{/* banner text */}
 				<div className="flex flex-col justify-center items-center lg:items-start w-full max-w-xl mx-auto order-2 lg:order-1">

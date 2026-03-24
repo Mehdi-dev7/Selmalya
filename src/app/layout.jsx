@@ -1,10 +1,17 @@
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Geist, Inter, Poppins } from "next/font/google";
+import { Cormorant_Garamond, Geist, Inter, Poppins } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
 	subsets: ["latin"],
+});
+
+const cormorant = Cormorant_Garamond({
+	subsets: ["latin"],
+	weight: ["400", "500", "600", "700"],
+	variable: "--font-cormorant",
+	display: "swap",
 });
 
 const poppins = Poppins({
@@ -95,7 +102,7 @@ export default function RootLayout({ children }) {
 				<link rel="manifest" href="/manifest.json" />
 			</head>
 			<body
-				className={`${geistSans.variable} ${poppins.variable} ${inter.variable} antialiased overflow-x-hidden`}
+				className={`${geistSans.variable} ${cormorant.variable} ${poppins.variable} ${inter.variable} antialiased overflow-x-hidden`}
 			>
 				{children}
 				<SpeedInsights />

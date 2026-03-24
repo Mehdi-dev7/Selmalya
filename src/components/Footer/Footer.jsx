@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import LogoSelmalya from "../../assets/selmalyapng.png";
@@ -61,6 +63,14 @@ export default function Footer() {
 									className="hover:text-mint transition-colors"
 								>
 									Services
+								</Link>
+							</li>
+							<li>
+								<Link
+									href="#blog"
+									className="hover:text-mint transition-colors"
+								>
+									Blog
 								</Link>
 							</li>
 							<li>

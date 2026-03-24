@@ -1,0 +1,298 @@
+{
+	"articles": [
+		{
+			"slug": "comprendre-le-tiers-payant-en-pharmacie",
+			"title": "Comprendre le tiers payant en pharmacie",
+			"excerpt": "Du ticket modérateur à la télétransmission : ce que les officines doivent maîtriser pour sécuriser les encaissements et la relation patient.",
+			"date": "2025-03-10",
+			"readTime": "8 min",
+			"image": "",
+			"blocks": [
+				{
+					"type": "p",
+					"text": "Le tiers payant permet au patient de ne régler en pharmacie que la partie restant à sa charge (ticket modérateur, dépassements non pris en charge, etc.), tandis que l’officine est payée directement par l’Assurance Maladie et, le cas échéant, par la mutuelle ou l’organisme complémentaire. C’est un mécanisme simple à l’usage du public, mais exigeant pour l’équipe : chaque étape — lecture de la carte Vitale, accord des droits, sélection du bon routage, contrôle des plafonds — impacte le versement des sommes et la traçabilité."
+				},
+				{
+					"type": "h2",
+					"text": "Les deux grands types de tiers payant"
+				},
+				{
+					"type": "p",
+					"text": "On distingue couramment le tiers payant obligatoire (TPO), qui couvre la part Assurance Maladie, et le tiers payant complémentaire (TPC), lorsqu’une mutuelle ou un organisme prend en charge tout ou partie du reste à charge. Le TPO est devenu la norme pour une grande partie des assurés ; le TPC dépend des contrats, des réseaux de soins et parfois de conventions locales. La pharmacie doit donc orchestrer deux flux financiers et administratifs distincts, avec des règles de rejet et de régularisation propres à chaque canal."
+				},
+				{
+					"type": "h2",
+					"text": "Enjeux concrets pour l’officine"
+				},
+				{
+					"type": "ul",
+					"items": [
+						"Fluidité du passage en caisse et image de service auprès des patients.",
+						"Réduction des impayés et des erreurs de facturation liées aux restes à charge mal identifiés.",
+						"Charge de suivi : rejets, relances organismes, régularisation des lots et des crédits mutuelles."
+					]
+				},
+				{
+					"type": "p",
+					"text": "Une bonne maîtrise du tiers payant, c’est aussi moins de tension sur les équipes : moins de rappels patients pour des participations mal calculées, moins de corrections manuelles en fin de journée. D’où l’intérêt d’outiller le poste d’encaissement, de tenir les référentiels à jour (lecteurs, logiciels, conventions) et de disposer de procédures claires en cas d’incident (carte expirée, droits non ouverts, mutuelle absente du répertoire)."
+				},
+				{
+					"type": "h2",
+					"text": "Conclusion"
+				},
+				{
+					"type": "p",
+					"text": "Le tiers payant n’est pas qu’une option commerciale : c’est une chaîne de confiance entre patient, pharmacie et organismes. Le sécuriser, c’est protéger les revenus de l’officine tout en tenant une promesse de service. Les équipes qui documentent leurs anomalies et capitalisent sur les retours d’expérience gagnent en sérénité sur la durée."
+				}
+			]
+		},
+		{
+			"slug": "rejets-teletransmission-optimisation-tiers-payant",
+			"title": "Rejets et télétransmission : optimiser votre tiers payant",
+			"excerpt": "Pourquoi les factures sont refusées, comment lire les retours SESAM-Vitale et quelles leviers actionner pour réduire les pertes et les délais de paiement.",
+			"date": "2025-03-05",
+			"readTime": "9 min",
+			"image": "",
+			"blocks": [
+				{
+					"type": "p",
+					"text": "Les rejets de factures ou de lots tiers payant sont une réalité fréquente : ils ne signifient pas systématiquement une faute lourde, mais un écart entre les données envoyées et ce que l’organisme attend à l’instant T (droits, références contrat, nature de prestation, cohérence des montants). La télétransmission via SESAM-Vitale et les flux associés accélèrent le traitement, mais exigent rigueur sur les paramétrages et sur la mise à jour des référentiels."
+				},
+				{
+					"type": "h2",
+					"text": "Origines fréquentes des rejets"
+				},
+				{
+					"type": "ul",
+					"items": [
+						"Droits patient non à jour ou situation changeante (AYANTS-DROIT, titulaire, période de carence).",
+						"Données mutuelle incomplètes ou identifiant organisme mal saisi.",
+						"Écarts sur les montants ou codes LPP / prestations ne correspondant pas au contexte de dispensation.",
+						"Problèmes techniques ponctuels : session, lecteur, signature, clôture de lot."
+					]
+				},
+				{
+					"type": "h2",
+					"text": "Télétransmission et pilotage"
+				},
+				{
+					"type": "p",
+					"text": "Une télétransmission bien suivie permet d’identifier rapidement les anomalies : tableaux de bord dans le logiciel, veille sur les messages d’alerte, archivage des accusés de réception. L’objectif n’est pas seulement de « passer » les factures, mais de comprendre les motifs de retour pour ajuster les process (formation courte en équipe, checklist en ouverture de caisse, contrôle des mises à jour logicielles)."
+				},
+				{
+					"type": "h2",
+					"text": "Pistes d’optimisation"
+				},
+				{
+					"type": "p",
+					"text": "Prioriser la traçabilité des corrections (qui, quand, quel motif), harmoniser la saisie entre les préparateurs et les responsables d’officine, et ne pas hésiter à solliciter l’éditeur ou le support en cas de récurrence sur un même code erreur. À moyen terme, externaliser ou centraliser une partie du suivi administratif permet de libérer du temps sur le plateau technique tout en gardant la maîtrise des indicateurs clés : taux de rejet, délai moyen de paiement, volume des relances."
+				},
+				{
+					"type": "p",
+					"text": "Chez Selmalya, nous accompagnons les pharmacies sur ces enjeux : structuration des flux, aide à la lecture des retours organismes et mise en place d’habitudes de pilotage adaptées à la taille de l’officine."
+				}
+			]
+		},
+		{
+			"slug": "externaliser-la-gestion-du-tiers-payant",
+			"title": "Externaliser la gestion du tiers payant : pourquoi et comment",
+			"excerpt": "Déléguer une partie du suivi administratif pour sécuriser les encaissements et recentrer l’équipe sur le conseil et la dispensation.",
+			"date": "2025-02-20",
+			"readTime": "5 min",
+			"image": "",
+			"blocks": [
+				{
+					"type": "p",
+					"text": "Externaliser ne signifie pas perdre le contrôle : il s’agit de confier à un partenaire spécialisé les tâches répétitives — relances, contrôle de cohérence des lots, suivi des crédits — pour que la pharmacie conserve la décision sur le service rendu au patient. Le bon partenaire s’aligne sur vos outils (LGPI, Pharmaland, Winpharma, etc.) et sur vos exigences de confidentialité."
+				},
+				{
+					"type": "h2",
+					"text": "Ce que l’on peut déléguer"
+				},
+				{
+					"type": "ul",
+					"items": [
+						"Suivi des rejets et préparation des régularisations.",
+						"Veille sur les échéances et les flux avec les organismes.",
+						"Reporting simple pour la direction d’officine."
+					]
+				},
+				{
+					"type": "p",
+					"text": "L’externalisation est particulièrement pertinente lorsque l’activité augmente, que les absences équipe pèsent sur le back-office, ou que les rejets récurrents grignotent des heures chaque semaine. L’objectif est un gain de temps mesurable et une baisse du stress lié aux impayés."
+				}
+			]
+		},
+		{
+			"slug": "mutuelles-credits-et-suivi",
+			"title": "Mutuelles, crédits et suivi : les bases à connaître",
+			"excerpt": "Comprendre la logique des crédits côté complémentaire santé et organiser un suivi fiable sans saturer l’équipe.",
+			"date": "2025-02-08",
+			"readTime": "4 min",
+			"image": "",
+			"blocks": [
+				{
+					"type": "p",
+					"text": "Les mutuelles et autres organismes complémentaires versent souvent des sommes sous forme de crédits affectés aux officines, avec des règles de compensation et d’imputation propres à chaque contrat ou réseau. Un suivi flou peut créer des écarts entre ce que vous pensez encaisser et ce qui est réellement réglé."
+				},
+				{
+					"type": "p",
+					"text": "La vigilance sur les relevés, la conciliation avec les ventes et la traçabilité des régularisations sont les trois piliers d’une gestion saine. Anticiper plutôt que rattraper en fin de mois évite les tensions trésorerie et les discussions difficiles avec les patients."
+				}
+			]
+		},
+		{
+			"slug": "sesam-vitale-et-flux-organismes",
+			"title": "SESAM-Vitale et flux avec les organismes",
+			"excerpt": "Rappels utiles sur les échanges sécurisés et l’importance des mises à jour pour limiter les interruptions de service.",
+			"date": "2025-01-25",
+			"readTime": "4 min",
+			"image": "",
+			"blocks": [
+				{
+					"type": "p",
+					"text": "L’écosystème SESAM-Vitale est au cœur du tiers payant : il conditionne la lecture des droits, la signature des feuilles de soins électroniques et la qualité des flux vers l’Assurance Maladie et les partenaires. Un environnement à jour — logiciel, lecteur, paramètres réseau — limite les incidents bloquants en pleine journée."
+				},
+				{
+					"type": "p",
+					"text": "Former régulièrement les équipes aux messages d’erreur courants et documenter les procédures en cas d’indisponibilité (plan B, information patient) fait partie des bonnes pratiques d’une officine moderne."
+				}
+			]
+		},
+		{
+			"slug": "vignettes-et-encaissement",
+			"title": "Vignettes avancées et bonnes pratiques d’encaissement",
+			"excerpt": "Réduire les erreurs sur les vignettes et harmoniser les gestes d’équipe au comptoir.",
+			"date": "2025-01-12",
+			"readTime": "4 min",
+			"image": "",
+			"blocks": [
+				{
+					"type": "p",
+					"text": "Les vignettes et dispositifs spécifiques demandent une attention particulière : confusion entre références, oubli de validation ou mauvaise combinaison avec le tiers payant complémentaire peuvent générer des rejets ou des régularisations coûteuses en temps."
+				},
+				{
+					"type": "p",
+					"text": "Instaurer des doubles contrôles sur les cas atypiques, harmoniser la communication entre préparateurs et caissiers, et capitaliser sur les retours d’erreurs en réunion courte permet de faire baisser le volume d’incidents sans alourdir la charge mentale au quotidien."
+				}
+			]
+		},
+		{
+			"slug": "ticket-moderateur-et-participation-patient",
+			"title": "Ticket modérateur et participation : ce que règle le patient",
+			"excerpt": "Distinguer reste à charge obligatoire, franchise mutuelle et dépassements pour éviter les litiges en caisse.",
+			"date": "2024-12-18",
+			"readTime": "5 min",
+			"image": "",
+			"published": false,
+			"blocks": [
+				{
+					"type": "p",
+					"text": "Le ticket modérateur correspond à la part laissée à la charge de l’assuré sur le tarif de convention. La mutuelle peut prendre en charge tout ou partie du reste à charge selon le contrat ; les dépassements d’honoraires ou certains produits non remboursés restent en principe à la charge du patient. Une explication claire au comptoir limite les incompréhensions."
+				},
+				{
+					"type": "p",
+					"text": "Former les équipes à reformuler simplement ces montants renforce la confiance et réduit les contestations après coup."
+				}
+			]
+		},
+		{
+			"slug": "conformite-rgpd-donnees-de-sante",
+			"title": "Données de santé et caisse : rappels RGPD utiles",
+			"excerpt": "Traçabilité, durée de conservation et accès aux dossiers : les bons réflexes en officine.",
+			"date": "2024-12-05",
+			"readTime": "4 min",
+			"image": "",
+			"published": false,
+			"blocks": [
+				{
+					"type": "p",
+					"text": "Les données traitées pour le tiers payant sont des données de santé : leur accès doit être limité aux professionnels habilités, les échanges sécurisés et la documentation des procédures à jour."
+				},
+				{
+					"type": "p",
+					"text": "Sensibiliser l’équipe aux écrans visibles du public et aux impressions de feuilles de soins contribue à une conformité durable sans alourdir le quotidien."
+				}
+			]
+		},
+		{
+			"slug": "lot-facturation-et-cloture",
+			"title": "Lots, facturation et clôture : ne pas bâcler la fin de journée",
+			"excerpt": "Pourquoi la clôture des sessions et la bonne imputation des lots évitent les découverts désagréables.",
+			"date": "2024-11-22",
+			"readTime": "5 min",
+			"image": "",
+			"published": false,
+			"blocks": [
+				{
+					"type": "p",
+					"text": "Les habitudes de clôture de caisse et de contrôle des lots télétransmis conditionnent la cohérence entre encaissements réels et flux attendus par les organismes. Un oubli récurrent sur une même plage horaire finit par se voir sur les relevés."
+				},
+				{
+					"type": "ul",
+					"items": [
+						"Vérifier les accusés de télétransmission avant de partir.",
+						"Noter les anomalies pour les traiter le lendemain en priorité."
+					]
+				}
+			]
+		},
+		{
+			"slug": "relation-avec-les-organismes",
+			"title": "Relation avec les organismes : qui contacter et quand",
+			"excerpt": "Canaux de contact, documentation des échanges et suivi des dossiers ouverts.",
+			"date": "2024-11-08",
+			"readTime": "4 min",
+			"image": "",
+			"published": false,
+			"blocks": [
+				{
+					"type": "p",
+					"text": "Les refus ou retards de paiement nécessitent souvent des relais avec les organismes : conserver références de dossier, dates d’appel et noms d’interlocuteurs accélère les résolutions."
+				},
+				{
+					"type": "p",
+					"text": "Un partenaire externe peut centraliser ce suivi pour les officines qui manquent de temps sur la gestion administrative."
+				}
+			]
+		},
+		{
+			"slug": "formation-equipe-tiers-payant",
+			"title": "Former l’équipe au tiers payant : petits ateliers qui paient",
+			"excerpt": "Rotation des rôles, fiches mémo et retours d’erreurs en réunion courte.",
+			"date": "2024-10-25",
+			"readTime": "4 min",
+			"image": "",
+			"published": false,
+			"blocks": [
+				{
+					"type": "p",
+					"text": "L’alternance des préparateurs sur le poste de télétransmission et des cas réels commentés en équipe réduit les erreurs répétitives. Une fiche de rappel par type d’erreur fréquent suffit souvent à corriger le tir."
+				},
+				{
+					"type": "p",
+					"text": "Investir une demi-heure par mois sur la formation interne est rentable comparé au temps perdu sur les régularisations."
+				}
+			]
+		},
+		{
+			"slug": "tresorerie-et-delais-de-remboursement",
+			"title": "Trésorerie et délais de remboursement : anticiper les écarts",
+			"excerpt": "Lire les délais moyens par organisme et lisser la trésorerie de l’officine.",
+			"date": "2024-10-10",
+			"readTime": "5 min",
+			"image": "",
+			"published": false,
+			"blocks": [
+				{
+					"type": "p",
+					"text": "Les versements des organismes ne sont pas toujours synchrones avec votre activité : suivre les délais moyens observés et provisionner prudemment évite les tensions en fin de mois."
+				},
+				{
+					"type": "p",
+					"text": "Croiser ces données avec votre banque et les relevés de tiers payant permet d’identifier rapidement un retard anormal ou un lot bloqué."
+				}
+			]
+		}
+	]
+}

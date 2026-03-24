@@ -27,11 +27,19 @@ body {
 	font-family: var(--font-geist), sans-serif;
 }
 
+/* Titres marque / hero — serif élégante */
+.font-display {
+	font-family: var(--font-cormorant), ui-serif, Georgia, serif;
+}
+
 @theme {
 	--color-mint: #88cfac;
 	--color-mint-dark: #34835c;
 	--color-green: #204f1e;
-	--color-light: #fbfbed;
+	/* Fond global plus clair et neutre, tout en restant chaleureux */
+	--color-light: #fcfcfa;
+	/* Bande alternée : légèrement plus soutenu que light (sections 2, 4, 6…) */
+	--color-light-muted: #F7F7F2;
 }
 
 @layer utilities {

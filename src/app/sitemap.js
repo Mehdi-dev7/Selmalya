@@ -1,6 +1,17 @@
+import { getAllArticles } from "@/lib/articles";
+
 const BASE_URL = "https://www.selmalya-tiers-payant.fr";
 
 export default function sitemap() {
+	const articles = getAllArticles();
+
+	const blogEntries = articles.map((article) => ({
+		url: `${BASE_URL}/blog/${article.slug}`,
+		lastModified: article.date ? new Date(article.date) : new Date(),
+		changeFrequency: "weekly",
+		priority: 0.75,
+	}));
+
 	return [
 		{
 			url: BASE_URL,
@@ -8,6 +19,7 @@ export default function sitemap() {
 			changeFrequency: "monthly",
 			priority: 1,
 		},
+		...blogEntries,
 		{
 			url: `${BASE_URL}/mentions/cgv`,
 			lastModified: new Date(),

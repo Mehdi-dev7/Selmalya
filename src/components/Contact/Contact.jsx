@@ -3,7 +3,7 @@ import ContactRight from "./ContactRight";
 import { motion } from "framer-motion";
 export default function Contact() {
 	return (
-		<section className="bg-light min-h-[1600px] lg:min-h-[1100px]">
+		<section className="bg-light-muted min-h-[1600px] lg:min-h-[1100px]">
 			<div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-8 pt-20">
 				<motion.h1 
 				initial={{ opacity: 0, y: 20 }}

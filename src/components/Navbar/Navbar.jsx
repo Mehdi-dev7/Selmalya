@@ -2,16 +2,20 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { IoMdMenu } from "react-icons/io";
 import { Link as LinkScroll } from "react-scroll";
 import LogoSelmalya from "../../assets/selmalyapng.png";
 
 export default function Navbar() {
+	const pathname = usePathname();
 	const [isScrolled, setIsScrolled] = useState(false);
 	const [isOpen, setIsOpen] = useState(false);
 	const menuRef = useRef(null);
 	const hamburgerRef = useRef(null);
+	const isHome = pathname === "/";
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -60,6 +64,11 @@ export default function Navbar() {
 		},
 		{
 			id: 4,
+			title: "Blog",
+			link: "blog",
+		},
+		{
+			id: 5,
 			title: "Contact",
 			link: "contact",
 		},
@@ -91,19 +100,31 @@ export default function Navbar() {
 					<ul className="flex items-center gap-10 ">
 						{NavbarMenu.map((menu) => (
 							<li key={menu.id} className="group">
-								<LinkScroll
-									to={menu.link}
-									spy={true}
-									smooth={true}
-									offset={-70}
-									duration={500}
-									className="font-semibold text-light hover:text-mint-dark duration-200 cursor-pointer"
-								>
-									<span className="relative inline-block">
-										{menu.title}
-										<div className="absolute left-0 right-0 bottom-0 mx-auto bg-mint-dark w-0 group-hover:w-full h-[1px] transition-all duration-500"></div>
-									</span>
-								</LinkScroll>
+								{menu.link === "blog" && !isHome ? (
+									<Link
+										href="/#blog"
+										className="font-semibold text-light hover:text-mint-dark duration-200 cursor-pointer"
+									>
+										<span className="relative inline-block">
+											{menu.title}
+											<div className="absolute left-0 right-0 bottom-0 mx-auto bg-mint-dark w-0 group-hover:w-full h-[1px] transition-all duration-500"></div>
+										</span>
+									</Link>
+								) : (
+									<LinkScroll
+										to={menu.link}
+										spy={true}
+										smooth={true}
+										offset={-70}
+										duration={500}
+										className="font-semibold text-light hover:text-mint-dark duration-200 cursor-pointer"
+									>
+										<span className="relative inline-block">
+											{menu.title}
+											<div className="absolute left-0 right-0 bottom-0 mx-auto bg-mint-dark w-0 group-hover:w-full h-[1px] transition-all duration-500"></div>
+										</span>
+									</LinkScroll>
+								)}
 							</li>
 						))}
 					</ul>
@@ -126,20 +147,33 @@ export default function Navbar() {
 				<ul className="flex flex-col items-center py-4 space-y-4 border-t border-light/70">
 					{NavbarMenu.map((menu) => (
 						<li className="w-full text-center" key={menu.id}>
-							<LinkScroll
-								to={menu.link}
-								spy={true}
-								smooth={true}
-								offset={-70}
-								duration={500}
-								className="font-semibold text-light cursor-pointer hover:text-mint-dark duration-200 inline-block"
-								onClick={() => setIsOpen(false)}
-							>
-								<span className="relative inline-block py-2 group">
-									{menu.title}
-									<div className="absolute left-0 right-0 bottom-0 mx-auto bg-mint-dark w-0 group-hover:w-full h-[1px] transition-all duration-500"></div>
-								</span>
-							</LinkScroll>
+							{menu.link === "blog" && !isHome ? (
+								<Link
+									href="/#blog"
+									className="font-semibold text-light cursor-pointer hover:text-mint-dark duration-200 inline-block"
+									onClick={() => setIsOpen(false)}
+								>
+									<span className="relative inline-block py-2 group">
+										{menu.title}
+										<div className="absolute left-0 right-0 bottom-0 mx-auto bg-mint-dark w-0 group-hover:w-full h-[1px] transition-all duration-500"></div>
+									</span>
+								</Link>
+							) : (
+								<LinkScroll
+									to={menu.link}
+									spy={true}
+									smooth={true}
+									offset={-70}
+									duration={500}
+									className="font-semibold text-light cursor-pointer hover:text-mint-dark duration-200 inline-block"
+									onClick={() => setIsOpen(false)}
+								>
+									<span className="relative inline-block py-2 group">
+										{menu.title}
+										<div className="absolute left-0 right-0 bottom-0 mx-auto bg-mint-dark w-0 group-hover:w-full h-[1px] transition-all duration-500"></div>
+									</span>
+								</LinkScroll>
+							)}
 						</li>
 					))}
 				</ul>

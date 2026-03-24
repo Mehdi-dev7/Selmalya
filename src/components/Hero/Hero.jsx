@@ -66,7 +66,7 @@ export default function Hero() {
 				{/* Texte */}
 				<div className="flex flex-col items-center md:items-start text-center md:text-left space-y-6 px-4 md:px-8 mt-10 lg:mt-0 2xl:mt-10">
 					<motion.h1
-						className="text-5xl md:text-6xl lg:text-[80px] xl:text-8xl 2xl:text-9xl font-bold"
+						className="font-display text-5xl md:text-6xl lg:text-[5.25rem] xl:text-[5.75rem] 2xl:text-[7.5rem] font-bold tracking-[0.02em] text-mint-dark leading-[1.05]"
 						initial="initial"
 						animate="animate"
 						variants={FadeUp(0.5)}
