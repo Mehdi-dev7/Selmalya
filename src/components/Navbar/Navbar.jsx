@@ -88,21 +88,26 @@ export default function Navbar() {
 			>
 				{/* Logo section */}
 				<div className="flex justify-center items-center">
-					<Image
-						className="logo w-15 h-15 border-2 border-black rounded-full object-contain bg-white"
-						src={LogoSelmalya}
-						alt="logo"
-						priority
-					/>
+					<Link
+						href="/"
+						className="rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-light focus-visible:ring-offset-2 focus-visible:ring-offset-mint"
+					>
+						<Image
+							className="logo w-15 h-15 border-2 border-black rounded-full object-contain bg-white"
+							src={LogoSelmalya}
+							alt="Selmalya — accueil"
+							priority
+						/>
+					</Link>
 				</div>
 				{/* Menu section */}
 				<div className="hidden lg:block">
 					<ul className="flex items-center gap-10 ">
 						{NavbarMenu.map((menu) => (
 							<li key={menu.id} className="group">
-								{menu.link === "blog" && !isHome ? (
+								{!isHome ? (
 									<Link
-										href="/#blog"
+										href={`/#${menu.link}`}
 										className="font-semibold text-light hover:text-mint-dark duration-200 cursor-pointer"
 									>
 										<span className="relative inline-block">
@@ -147,9 +152,9 @@ export default function Navbar() {
 				<ul className="flex flex-col items-center py-4 space-y-4 border-t border-light/70">
 					{NavbarMenu.map((menu) => (
 						<li className="w-full text-center" key={menu.id}>
-							{menu.link === "blog" && !isHome ? (
+							{!isHome ? (
 								<Link
-									href="/#blog"
+									href={`/#${menu.link}`}
 									className="font-semibold text-light cursor-pointer hover:text-mint-dark duration-200 inline-block"
 									onClick={() => setIsOpen(false)}
 								>

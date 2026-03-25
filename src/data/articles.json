@@ -6,7 +6,7 @@
 			"excerpt": "Du ticket modérateur à la télétransmission : ce que les officines doivent maîtriser pour sécuriser les encaissements et la relation patient.",
 			"date": "2025-03-10",
 			"readTime": "8 min",
-			"image": "",
+			"image": "/images/blog/lgpi.gif",
 			"blocks": [
 				{
 					"type": "p",
@@ -42,7 +42,7 @@
 				},
 				{
 					"type": "p",
-					"text": "Le tiers payant n’est pas qu’une option commerciale : c’est une chaîne de confiance entre patient, pharmacie et organismes. Le sécuriser, c’est protéger les revenus de l’officine tout en tenant une promesse de service. Les équipes qui documentent leurs anomalies et capitalisent sur les retours d’expérience gagnent en sérénité sur la durée."
+					"text": "Le tiers payant n’est pas qu’une option commerciale : c’est une chaîne de confiance entre patient, pharmacie et organismes. Le sécuriser, c’est protéger les revenus de l’officine tout en tenant une promesse de service. Les équipes qui documentent leurs anomalies et capitalisent sur les retours d’expérience gagnent en sérénité sur la durée. Selmalya propose un accompagnement adapté aux officines : découvrez {{SERVICES}}."
 				}
 			]
 		},
@@ -52,7 +52,7 @@
 			"excerpt": "Pourquoi les factures sont refusées, comment lire les retours SESAM-Vitale et quelles leviers actionner pour réduire les pertes et les délais de paiement.",
 			"date": "2025-03-05",
 			"readTime": "9 min",
-			"image": "",
+			"image": "/images/blog/img-art2.jpg",
 			"blocks": [
 				{
 					"type": "p",
@@ -90,6 +90,10 @@
 				{
 					"type": "p",
 					"text": "Chez Selmalya, nous accompagnons les pharmacies sur ces enjeux : structuration des flux, aide à la lecture des retours organismes et mise en place d’habitudes de pilotage adaptées à la taille de l’officine."
+				},
+				{
+					"type": "p",
+					"text": "Pour aller plus loin sur la structuration et le pilotage, consultez {{SERVICES}} et la formule proposée par Selmalya."
 				}
 			]
 		},
@@ -99,7 +103,7 @@
 			"excerpt": "Déléguer une partie du suivi administratif pour sécuriser les encaissements et recentrer l’équipe sur le conseil et la dispensation.",
 			"date": "2025-02-20",
 			"readTime": "5 min",
-			"image": "",
+			"image": "/images/blog/img-art3.jpg",
 			"blocks": [
 				{
 					"type": "p",
@@ -120,6 +124,10 @@
 				{
 					"type": "p",
 					"text": "L’externalisation est particulièrement pertinente lorsque l’activité augmente, que les absences équipe pèsent sur le back-office, ou que les rejets récurrents grignotent des heures chaque semaine. L’objectif est un gain de temps mesurable et une baisse du stress lié aux impayés."
+				},
+				{
+					"type": "p",
+					"text": "Avec Selmalya, l’externalisation s’appuie sur une offre structurée et des outils alignés sur votre logiciel : le détail figure dans {{SERVICES}}."
 				}
 			]
 		},
@@ -129,7 +137,7 @@
 			"excerpt": "Comprendre la logique des crédits côté complémentaire santé et organiser un suivi fiable sans saturer l’équipe.",
 			"date": "2025-02-08",
 			"readTime": "4 min",
-			"image": "",
+			"image": "/images/blog/carte-mutuelle.jpg",
 			"blocks": [
 				{
 					"type": "p",
@@ -138,6 +146,10 @@
 				{
 					"type": "p",
 					"text": "La vigilance sur les relevés, la conciliation avec les ventes et la traçabilité des régularisations sont les trois piliers d’une gestion saine. Anticiper plutôt que rattraper en fin de mois évite les tensions trésorerie et les discussions difficiles avec les patients."
+				},
+				{
+					"type": "p",
+					"text": "Pour structurer ce suivi sans saturer l’équipe, Selmalya propose un accompagnement dédié : voir {{SERVICES}}."
 				}
 			]
 		},
@@ -147,7 +159,7 @@
 			"excerpt": "Rappels utiles sur les échanges sécurisés et l’importance des mises à jour pour limiter les interruptions de service.",
 			"date": "2025-01-25",
 			"readTime": "4 min",
-			"image": "",
+			"image": "/images/blog/img-carte-vital.jpg",
 			"blocks": [
 				{
 					"type": "p",
@@ -156,6 +168,10 @@
 				{
 					"type": "p",
 					"text": "Former régulièrement les équipes aux messages d’erreur courants et documenter les procédures en cas d’indisponibilité (plan B, information patient) fait partie des bonnes pratiques d’une officine moderne."
+				},
+				{
+					"type": "p",
+					"text": "Selmalya accompagne les officines sur la mise à jour des flux et les bonnes pratiques poste à poste : en savoir plus dans {{SERVICES}}."
 				}
 			]
 		},
@@ -165,7 +181,7 @@
 			"excerpt": "Réduire les erreurs sur les vignettes et harmoniser les gestes d’équipe au comptoir.",
 			"date": "2025-01-12",
 			"readTime": "4 min",
-			"image": "",
+			"image": "/images/blog/art6.webp",
 			"blocks": [
 				{
 					"type": "p",
@@ -174,6 +190,10 @@
 				{
 					"type": "p",
 					"text": "Instaurer des doubles contrôles sur les cas atypiques, harmoniser la communication entre préparateurs et caissiers, et capitaliser sur les retours d’erreurs en réunion courte permet de faire baisser le volume d’incidents sans alourdir la charge mentale au quotidien."
+				},
+				{
+					"type": "p",
+					"text": "Pour sécuriser l’encaissement et le tiers payant au quotidien, découvrez l’offre Selmalya dans {{SERVICES}}."
 				}
 			]
 		},
@@ -193,6 +213,10 @@
 				{
 					"type": "p",
 					"text": "Former les équipes à reformuler simplement ces montants renforce la confiance et réduit les contestations après coup."
+				},
+				{
+					"type": "p",
+					"text": "Selmalya aide les officines à clarifier caisse et participations : découvrez {{SERVICES}}."
 				}
 			]
 		},
@@ -212,6 +236,10 @@
 				{
 					"type": "p",
 					"text": "Sensibiliser l’équipe aux écrans visibles du public et aux impressions de feuilles de soins contribue à une conformité durable sans alourdir le quotidien."
+				},
+				{
+					"type": "p",
+					"text": "Pour un accompagnement aligné sur vos processus, Selmalya détaille son offre dans {{SERVICES}}."
 				}
 			]
 		},
@@ -234,6 +262,10 @@
 						"Vérifier les accusés de télétransmission avant de partir.",
 						"Noter les anomalies pour les traiter le lendemain en priorité."
 					]
+				},
+				{
+					"type": "p",
+					"text": "Selmalya peut vous aider à fiabiliser les clôtures et le suivi des lots : voir {{SERVICES}}."
 				}
 			]
 		},
@@ -253,6 +285,10 @@
 				{
 					"type": "p",
 					"text": "Un partenaire externe peut centraliser ce suivi pour les officines qui manquent de temps sur la gestion administrative."
+				},
+				{
+					"type": "p",
+					"text": "Avec Selmalya, ce type de suivi s’inscrit dans une offre claire : {{SERVICES}}."
 				}
 			]
 		},
@@ -272,6 +308,10 @@
 				{
 					"type": "p",
 					"text": "Investir une demi-heure par mois sur la formation interne est rentable comparé au temps perdu sur les régularisations."
+				},
+				{
+					"type": "p",
+					"text": "Selmalya accompagne aussi la montée en compétences autour du tiers payant : détails dans {{SERVICES}}."
 				}
 			]
 		},
@@ -291,6 +331,10 @@
 				{
 					"type": "p",
 					"text": "Croiser ces données avec votre banque et les relevés de tiers payant permet d’identifier rapidement un retard anormal ou un lot bloqué."
+				},
+				{
+					"type": "p",
+					"text": "Pour un appui sur le pilotage financier et le tiers payant, consultez {{SERVICES}} proposés par Selmalya."
 				}
 			]
 		}
