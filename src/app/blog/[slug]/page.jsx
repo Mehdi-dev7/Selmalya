@@ -21,18 +21,45 @@ export async function generateStaticParams() {
 	return getAllSlugs().map((slug) => ({ slug }));
 }
 
+const SITE_URL = "https://www.selmalya-tiers-payant.fr";
+
 export async function generateMetadata({ params }) {
 	const { slug } = await params;
 	const article = getArticleBySlug(slug);
 	if (!article) {
 		return { title: "Article | Selmalya" };
 	}
+
+	const url = `${SITE_URL}/blog/${slug}`;
+	const imageUrl = article.image ? `${SITE_URL}${article.image}` : undefined;
+
 	return {
 		title: `${article.title} | Selmalya`,
 		description: article.excerpt,
 		alternates: {
-      canonical: `/blog/${slug}`, // ← ajouter ça
-    },
+			canonical: `/blog/${slug}`,
+		},
+		// Carte riche pour partages Facebook, LinkedIn, WhatsApp...
+		openGraph: {
+			type: "article",
+			url,
+			title: article.title,
+			description: article.excerpt,
+			siteName: "Selmalya",
+			locale: "fr_FR",
+			publishedTime: article.date,
+			authors: ["Selmalya"],
+			images: imageUrl
+				? [{ url: imageUrl, alt: article.title }]
+				: undefined,
+		},
+		// Carte Twitter / X
+		twitter: {
+			card: "summary_large_image",
+			title: article.title,
+			description: article.excerpt,
+			images: imageUrl ? [imageUrl] : undefined,
+		},
 	};
 }
 
