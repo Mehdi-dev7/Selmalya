@@ -5,7 +5,7 @@ export default function robots() {
 				userAgent: "*",
 				allow: "/",
 				// Bloquer les assets internes Next.js que Google n'a pas besoin d'indexer
-				disallow: ["/_next/static/", "/api/"],
+				disallow: ["/_next/static/", "/api/", "/favicon.ico"],
 			},
 		],
 		sitemap: "https://www.selmalya-tiers-payant.fr/sitemap.xml",

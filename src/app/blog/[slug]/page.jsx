@@ -30,6 +30,9 @@ export async function generateMetadata({ params }) {
 	return {
 		title: `${article.title} | Selmalya`,
 		description: article.excerpt,
+		alternates: {
+      canonical: `/blog/${slug}`, // ← ajouter ça
+    },
 	};
 }
 

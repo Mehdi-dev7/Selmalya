@@ -42,7 +42,7 @@ export const metadata = {
 	
 	// ✅ CANONICAL avec www
 	alternates: {
-		canonical: BASE_URL,
+		canonical: "/",
 		languages: {
 			"fr-FR": BASE_URL,
 		},

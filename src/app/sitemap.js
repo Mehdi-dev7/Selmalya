@@ -22,20 +22,20 @@ export default function sitemap() {
 		...blogEntries,
 		{
 			url: `${BASE_URL}/mentions/cgv`,
-			lastModified: new Date(),
-			changeFrequency: "monthly",
+			lastModified: new Date("2025-01-01"),
+			changeFrequency: "yearly",
 			priority: 0.8,
 		},
 		{
 			url: `${BASE_URL}/mentions/mentions-legales`,
-			lastModified: new Date(),
-			changeFrequency: "monthly",
+			lastModified: new Date("2025-01-01"),
+			changeFrequency: "yearly",
 			priority: 0.8,
 		},
 		{
 			url: `${BASE_URL}/mentions/politique-confidentialite`,
-			lastModified: new Date(),
-			changeFrequency: "monthly",
+			lastModified: new Date("2025-01-01"),
+			changeFrequency: "yearly",
 			priority: 0.8,
 		},
 	];
