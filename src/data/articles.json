@@ -1,6 +1,65 @@
 {
 	"articles": [
 		{
+			"slug": "ordonnance-electronique-pharmacie",
+			"title": "Ordonnance électronique : ce que change la e-prescription en pharmacie",
+			"excerpt": "Déploiement national, QR code, articulation avec la carte Vitale et bonnes pratiques pour des équipes d’officine prêtes à dispenser sans accroc.",
+			"date": "2026-04-15",
+			"readTime": "7 min",
+			"image": "/images/blog/tel-ordo.webp",
+			"blocks": [
+				{
+					"type": "p",
+					"text": "L’ordonnance électronique (ou e-prescription) remplace progressivement la prescription papier : le médecin génère une ordonnance dématérialisée, stockée sur un serveur sécurisé de l’Assurance Maladie, et transmise au patient sous forme d’un document accompagné d’un QR code. En pharmacie, la dispensation consiste à récupérer cette ordonnance dans le système via la carte Vitale ou le QR code, à valider les lignes délivrées, puis à retourner l’information pour alimenter le dossier du patient et la facturation."
+				},
+				{
+					"type": "h2",
+					"text": "Comment fonctionne la dispensation d’une e-prescription"
+				},
+				{
+					"type": "p",
+					"text": "Concrètement, le parcours au comptoir se simplifie : la lecture de la carte Vitale du patient permet d’accéder aux ordonnances en cours, ou bien la scan du QR code imprimé (ou affiché sur un smartphone) ouvre directement la prescription dans le logiciel métier (LGPI, Winpharma, Smart Rx, Pharmaland, etc.). Le pharmacien valide les produits délivrés, saisit les éventuelles substitutions, et la dispensation est renvoyée en temps réel au téléservice. L’objectif : fiabiliser la chaîne de prescription, éviter les falsifications, et fluidifier la traçabilité entre prescripteur, officine et caisse."
+				},
+				{
+					"type": "h2",
+					"text": "Ce qui change concrètement au comptoir"
+				},
+				{
+					"type": "ul",
+					"items": [
+						"Moins d’erreurs de lecture liées aux ordonnances manuscrites ou mal numérisées.",
+						"Gestion facilitée des renouvellements et des dispensations fractionnées (suivi des délivrances déjà effectuées).",
+						"Meilleure coordination avec les autres professionnels de santé via le dossier partagé.",
+						"Réduction du risque de fraude documentaire (ordonnances falsifiées ou dupliquées)."
+					]
+				},
+				{
+					"type": "h2",
+					"text": "Points de vigilance pour l’équipe"
+				},
+				{
+					"type": "p",
+					"text": "La transition n’est pas anodine : elle demande des logiciels à jour, une bonne connexion aux téléservices, et une équipe à l’aise avec le double flux (ordonnances électroniques et papier qui coexistent pendant la montée en charge). Les incidents les plus fréquents observés concernent la non-récupération d’une ordonnance faute de mise à jour logicielle, des QR codes illisibles sur smartphone (capture d’écran floue, luminosité), ou des dispensations partielles mal enregistrées qui compliquent le renouvellement chez une autre officine. Un rappel court en équipe sur les gestes clés et un point régulier avec l’éditeur du logiciel permettent de limiter ces frictions."
+				},
+				{
+					"type": "h2",
+					"text": "Impact sur le tiers payant et la télétransmission"
+				},
+				{
+					"type": "p",
+					"text": "La bascule vers l’e-prescription ne modifie pas les règles du tiers payant : la facturation passe toujours par SESAM-Vitale, avec les mêmes contrôles sur les droits, les mutuelles et les montants. En revanche, elle renforce la cohérence entre la prescription et la feuille de soins électronique, ce qui devrait, à terme, faire baisser certains motifs de rejet liés à des écarts entre ordonnance et dispensation. Pour les officines qui suivent leurs indicateurs, c’est un levier supplémentaire pour fiabiliser le back-office."
+				},
+				{
+					"type": "h2",
+					"text": "Conclusion"
+				},
+				{
+					"type": "p",
+					"text": "L’ordonnance électronique s’inscrit dans la modernisation plus large du parcours de soins : Mon espace santé, DMP, messagerie sécurisée. Les pharmacies qui s’approprient ces outils tôt gagnent en sérénité et en image auprès de leurs patients. L’enjeu pour l’officine est surtout organisationnel : former les équipes, fiabiliser les flux, et capitaliser sur les retours d’expérience pour transformer une obligation réglementaire en véritable atout de service. Selmalya accompagne les officines dans cette transition et sur l’optimisation du tiers payant : découvrez {{SERVICES}}."
+				}
+			]
+		},
+		{
 			"slug": "comprendre-le-tiers-payant-en-pharmacie",
 			"title": "Comprendre le tiers payant en pharmacie",
 			"excerpt": "Du ticket modérateur à la télétransmission : ce que les officines doivent maîtriser pour sécuriser les encaissements et la relation patient.",
