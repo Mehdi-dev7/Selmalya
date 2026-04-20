@@ -2,6 +2,7 @@ import ArticleBlocks from "@/components/Blog/ArticleBlocks";
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 import { getAllSlugs, getArticleBySlug } from "@/lib/articles";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -101,6 +102,20 @@ export default async function BlogArticlePage({ params }) {
 							{article.excerpt}
 						</p>
 					</header>
+
+					{/* Image de couverture de l'article (si présente) */}
+					{article.image ? (
+						<figure className="mb-10 overflow-hidden rounded-2xl shadow-md">
+							<Image
+								src={article.image}
+								alt={article.title}
+								width={1200}
+								height={675}
+								priority
+								className="w-full h-auto object-cover"
+							/>
+						</figure>
+					) : null}
 
 					<ArticleBlocks blocks={article.blocks} />
 
