@@ -1,3 +1,5 @@
+"use client";
+
 import ContactLeft from "./ContactLeft";
 import ContactRight from "./ContactRight";
 import { motion } from "framer-motion";

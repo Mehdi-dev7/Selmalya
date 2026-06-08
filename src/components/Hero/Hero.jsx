@@ -1,8 +1,13 @@
+"use client";
+
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Link as ScrollLink } from "react-scroll";
 import Blob from "../../assets/blob-selmalya.svg";
 import HeroPng from "../../assets/selmalyapng.png";
+
+// Créé une seule fois en dehors du composant pour éviter la recréation à chaque render
+const MotionImage = motion.create(Image);
 
 export const FadeUp = (delay) => {
 	return {
@@ -26,11 +31,8 @@ export const FadeUp = (delay) => {
 
 export default function Hero() {
 	const handleContactClick = () => {
-		// Vous pouvez ajouter d'autres actions ici si nécessaire
 		console.log("Navigation vers la section contact");
 	};
-
-	const MotionImage = motion.create(Image);
 
 	return (
 		<section className="bg-light min-h-[800px] sm:min-h-screen flex items-center justify-center py-10 sm:py-16">

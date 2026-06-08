@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { BiSupport } from "react-icons/bi";
 import { FaFileInvoiceDollar, FaHandHoldingUsd } from "react-icons/fa";
